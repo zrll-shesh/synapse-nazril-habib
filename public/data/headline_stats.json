@@ -1,0 +1,48 @@
+{
+  "jumlah_rumah_sakit": 276,
+  "jumlah_provinsi": 35,
+  "pilar1": {
+    "r2_struktural": 0.423,
+    "r2_investasi": 0.811,
+    "vif_max_struktural": 6.76,
+    "gap_digital_timur_barat": -11.59,
+    "gap_respons_timur_barat": 8.8,
+    "satusehat_selisih_menit": 0.218,
+    "satusehat_p_value": 0.953
+  },
+  "pilar2": {
+    "efek_gap_digital_respons_per10poin": -3.3,
+    "efek_gap_digital_los_per10poin": -0.075,
+    "los_signifikan": false,
+    "respons_signifikan": true
+  },
+  "pilar3": {
+    "silhouette": 0.581,
+    "calinski_harabasz": 182.7,
+    "davies_bouldin": 0.727,
+    "n_flagged": 26,
+    "flag_rate_overall": 9.4,
+    "flag_rate_digital_frontier": 0.0,
+    "cluster_digital_frontier_n": 26,
+    "cluster_mainstream_n": 250
+  },
+  "pilar4": {
+    "roc_auc": 0.693,
+    "recall": 0.16,
+    "precision": 0.2,
+    "model": "XGBoost + scale_pos_weight",
+    "top_signals": [
+      "region_Jawa",
+      "kepemilikan_Bumn",
+      "region_Sumatera"
+    ]
+  },
+  "pilar5": {
+    "xgb_rmse_respons": 22.12,
+    "mlp_rmse_respons": 22.49,
+    "xgb_rmse_los": 1.4995,
+    "mlp_rmse_los": 1.5308,
+    "signifikan_nb": false,
+    "winner": "XGBoost (interpretabilitas SHAP)"
+  }
+}

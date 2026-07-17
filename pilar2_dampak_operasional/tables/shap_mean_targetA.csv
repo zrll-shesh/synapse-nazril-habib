@@ -1,0 +1,26 @@
+Feature,MeanAbsSHAP
+digital_gap_score,3.328714
+jumlah_tenaga_kerja,3.0050194
+skor_kematangan_digital,2.1458168
+tingkat_keterisian_tempat_tidur_persen,1.9730455
+jumlah_tempat_tidur,1.2724743
+rasio_adopsi_telemedicine,1.1945305
+jumlah_perangkat_iot,1.1129503
+jumlah_jenis_layanan,0.9698837
+anggaran_it_tahunan_juta_rupiah,0.8148332
+kunjungan_pasien_per_bulan,0.7618454
+region_Sumatera,0.54264915
+jumlah_staf_it,0.34749955
+kepemilikan_Swasta,0.31255487
+kepemilikan_BUMN,0.27052814
+kepemilikan_TNI/POLRI,0.1487117
+region_Bali & Nusa Tenggara,0.14126353
+kepemilikan_Pemerintah Pusat,0.11895411
+region_Maluku & Papua,0.0915071
+status_terhubung_satusehat_enc,0.09104279
+kelas_rumah_sakit_C,0.07639242
+kelas_rumah_sakit_B,0.06260066
+region_Kalimantan,0.05644979
+region_Sulawesi,0.040688008
+status_implementasi_rme_enc,0.016107757
+kelas_rumah_sakit_D,0.0

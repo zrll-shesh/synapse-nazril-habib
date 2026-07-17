@@ -1,0 +1,299 @@
+[
+  {
+    "id": "pilar1_model_struktural",
+    "title": "Pilar 1 - Model Struktural Kematangan Digital",
+    "content": "Model regresi struktural memprediksi skor kematangan digital rumah sakit menggunakan kelas rumah sakit, kepemilikan, dan wilayah (region) sebagai variabel penjelas, tanpa melibatkan anggaran atau perangkat IT secara langsung. Model ini menjelaskan sekitar 42.3 persen variasi skor kematangan digital antar rumah sakit (R-squared = 0.423). Nilai VIF maksimum pada model ini adalah 6.76, di bawah ambang batas kekhawatiran umum sebesar 10, sehingga seluruh koefisien layak diinterpretasikan langsung tanpa distorsi multikolinearitas. Faktor struktural dengan pengaruh positif terbesar terhadap skor digital adalah wilayah Jawa, sedangkan faktor dengan pengaruh paling negatif adalah kelas rumah sakit D. Insight utama: kesenjangan kematangan digital antar rumah sakit sebagian besar dijelaskan oleh faktor struktural bawaan seperti kelas dan lokasi, bukan semata-mata oleh keputusan investasi jangka pendek.",
+    "metadata": {
+      "category": "audit_digital",
+      "pilar": "pilar_1"
+    }
+  },
+  {
+    "id": "pilar1_model_investasi",
+    "title": "Pilar 1 - Model Investasi Kematangan Digital (Konteks)",
+    "content": "Model regresi investasi memprediksi skor kematangan digital dari empat variabel investasi IT: anggaran IT tahunan, jumlah staf IT, jumlah perangkat IoT, dan volume kunjungan telemedicine per bulan. Model ini menjelaskan sekitar 81.1 persen variasi skor kematangan digital (R-squared = 0.811), jauh lebih tinggi dibandingkan model struktural. Nilai VIF maksimum pada model ini berada di kisaran aman, tanpa indikasi multikolinearitas serius. Karena skor kematangan digital kemungkinan besar dihitung sebagai turunan dari variabel investasi ini, model ini ditempatkan sebagai konteks pendukung, bukan sebagai klaim hubungan sebab-akibat yang independen. Insight utama: keempat variabel investasi IT ini adalah komponen pembentuk utama skor kematangan digital, sehingga peningkatan pada salah satu dari keempatnya, terutama anggaran IT dan jumlah staf IT, akan tercermin langsung pada kenaikan skor.",
+    "metadata": {
+      "category": "audit_digital",
+      "pilar": "pilar_1"
+    }
+  },
+  {
+    "id": "pilar1_kesenjangan_regional",
+    "title": "Pilar 1 - Kesenjangan Digital Kawasan Barat-Tengah vs Timur",
+    "content": "Rumah sakit di kawasan Indonesia Timur (Bali, Nusa Tenggara Barat, Nusa Tenggara Timur, Maluku, Maluku Utara, Papua, Papua Barat, Papua Tengah) memiliki rata-rata skor kematangan digital sebesar 47.99, lebih rendah 11.59 poin dibandingkan rata-rata kawasan Barat dan Tengah (Jawa, Sumatera, Kalimantan, Sulawesi) yang mencapai 59.58. Perbedaan ini signifikan secara statistik (uji t, p = 0.000019). Pada waktu respons rujukan, rumah sakit di kawasan Timur rata-rata membutuhkan 52.68 menit, lebih lambat 8.80 menit dibandingkan kawasan Barat-Tengah yang rata-rata 43.88 menit (uji t, p = 0.004048). Insight utama: kesenjangan regional pada transformasi digital rumah sakit bukan sekadar persepsi, melainkan kesenjangan yang terukur dan konsisten pada dua indikator sekaligus, skor digital dan kecepatan respons layanan.",
+    "metadata": {
+      "category": "audit_digital",
+      "pilar": "pilar_1"
+    }
+  },
+  {
+    "id": "pilar1_status_satusehat",
+    "title": "Pilar 1 - Status SatuSehat vs Efisiensi Operasional",
+    "content": "Rumah sakit yang sudah terhubung SatuSehat memiliki rata-rata waktu respons rujukan 45.86 menit, sedangkan yang belum terhubung rata-rata 45.64 menit, selisih hanya 0.218 menit. Uji t menunjukkan perbedaan ini tidak signifikan secara statistik (p = 0.953). Insight utama: status koneksi SatuSehat saat ini lebih tepat dibaca sebagai penanda kepatuhan administratif terhadap regulasi, bukan sebagai indikator efisiensi operasional riil. Rumah sakit tidak boleh menganggap koneksi SatuSehat sebagai bukti transformasi digital yang sudah berdampak pada layanan pasien.",
+    "metadata": {
+      "category": "audit_digital",
+      "pilar": "pilar_1"
+    }
+  },
+  {
+    "id": "pilar3_ringkasan_segmentasi",
+    "title": "Pilar 3 - Ringkasan Metodologi Segmentasi",
+    "content": "Segmentasi rumah sakit dilakukan melalui pencarian kombinatorial menyeluruh terhadap kombinasi fitur, metode scaling, reduksi dimensi, dan algoritma clustering (Gaussian Mixture Model, KMeans, Agglomerative Clustering), dengan syarat setiap klaster berukuran wajar secara bisnis. Model terbaik yang ditemukan adalah GMM-spherical dengan k = 2 pada fitur ['beban_pasien_per_staf', 'rasio_adopsi_telemedicine'], mencapai silhouette score 0.581 (Calinski-Harabasz = 182.70, Davies-Bouldin = 0.727), jauh di atas ambang konvensional 0.5 yang menandakan struktur klaster kuat dan terpisah dengan jelas. Sebanyak 26 dari 276 rumah sakit terindikasi mengalami inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat, dihitung secara independen dari proses clustering. Insight utama: klaster Digital Frontier memiliki tingkat inefisiensi ganda sebesar 0.0 persen, dibandingkan populasi keseluruhan sebesar 9.4 persen, menjadi validasi silang independen bahwa segmentasi ini menangkap pola risiko operasional yang nyata, bukan sekadar pemisahan statistik semu.",
+    "metadata": {
+      "category": "segmentasi",
+      "pilar": "pilar_3"
+    }
+  },
+  {
+    "id": "pilar3_klaster_0",
+    "title": "Pilar 3 - Profil Klaster 0 (Digital Leaders)",
+    "content": "Klaster 0 beranggotakan 26 rumah sakit dari total 276 rumah sakit dalam dataset. Rata-rata skor kematangan digital pada klaster ini adalah 66.28 (tergolong tinggi dibanding klaster lain), dengan rata-rata waktu respons rujukan 37.60 menit (tergolong cepat). Rata-rata tingkat keterisian tempat tidur adalah 64.05 persen, beban pasien per staf 3.46, dan rasio adopsi telemedicine 35.10 persen. Sebanyak 0.0 persen anggota klaster ini juga ter-flag sebagai inefisiensi ganda pada analisis independen. Label bisnis yang paling sesuai untuk klaster ini adalah Digital Leaders. Insight utama: klaster ini menjadi acuan praktik terbaik karena mencapai efisiensi operasional tertinggi berbasis kematangan digital.",
+    "metadata": {
+      "category": "segmentasi",
+      "pilar": "pilar_3"
+    }
+  },
+  {
+    "id": "pilar3_klaster_1",
+    "title": "Pilar 3 - Profil Klaster 1 (Zona Inefisiensi Ganda)",
+    "content": "Klaster 1 beranggotakan 250 rumah sakit dari total 276 rumah sakit dalam dataset. Rata-rata skor kematangan digital pada klaster ini adalah 56.05 (tergolong rendah dibanding klaster lain), dengan rata-rata waktu respons rujukan 46.68 menit (tergolong lambat). Rata-rata tingkat keterisian tempat tidur adalah 68.32 persen, beban pasien per staf 4.77, dan rasio adopsi telemedicine 8.80 persen. Sebanyak 10.4 persen anggota klaster ini juga ter-flag sebagai inefisiensi ganda pada analisis independen. Label bisnis yang paling sesuai untuk klaster ini adalah Zona Inefisiensi Ganda. Insight utama: klaster ini menjadi prioritas utama intervensi karena kombinasi skor digital rendah dan respons lambat menandakan risiko keselamatan pasien pada kasus rujukan darurat.",
+    "metadata": {
+      "category": "segmentasi",
+      "pilar": "pilar_3"
+    }
+  },
+  {
+    "id": "hospital_rs_sejahtera_6",
+    "title": "Profil Rumah Sakit - RS Sejahtera 6",
+    "content": "RS Sejahtera 6 adalah rumah sakit kelas D dengan kepemilikan Swasta, berlokasi di provinsi Bengkulu (kawasan Sumatera). Skor kematangan digital rumah sakit ini adalah 41.7, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 64.0 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp68.1 juta dengan 2 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 1.63), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_harapan_bangsa_2",
+    "title": "Profil Rumah Sakit - RS Harapan Bangsa 2",
+    "content": "RS Harapan Bangsa 2 adalah rumah sakit kelas C dengan kepemilikan Bumn, berlokasi di provinsi Aceh (kawasan Sumatera). Skor kematangan digital rumah sakit ini adalah 43.5, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 72.8 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp115.3 juta dengan 7 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 2.65), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rsud_husada_mulia_3",
+    "title": "Profil Rumah Sakit - RSUD Husada Mulia 3",
+    "content": "RSUD Husada Mulia 3 adalah rumah sakit kelas C dengan kepemilikan Pemerintah Daerah, berlokasi di provinsi Kalimantan Timur (kawasan Kalimantan). Skor kematangan digital rumah sakit ini adalah 40.5, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 64.6 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp113.2 juta dengan 4 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 2.79), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_karya_insani_5",
+    "title": "Profil Rumah Sakit - RS Karya Insani 5",
+    "content": "RS Karya Insani 5 adalah rumah sakit kelas C dengan kepemilikan Swasta, berlokasi di provinsi Kalimantan Utara (kawasan Kalimantan). Skor kematangan digital rumah sakit ini adalah 7.3, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 60.1 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp36.0 juta dengan 4 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 4.93), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_sejahtera_8",
+    "title": "Profil Rumah Sakit - RS Sejahtera 8",
+    "content": "RS Sejahtera 8 adalah rumah sakit kelas C dengan kepemilikan Pemerintah Pusat, berlokasi di provinsi Kalimantan Utara (kawasan Kalimantan). Skor kematangan digital rumah sakit ini adalah 22.4, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 75.0 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp6.8 juta dengan 3 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 0.30), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rsud_sejahtera_2",
+    "title": "Profil Rumah Sakit - RSUD Sejahtera 2",
+    "content": "RSUD Sejahtera 2 adalah rumah sakit kelas C dengan kepemilikan Pemerintah Daerah, berlokasi di provinsi Sulawesi Utara (kawasan Sulawesi). Skor kematangan digital rumah sakit ini adalah 43.8, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 77.3 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp78.2 juta dengan 5 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 1.79), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rsud_harapan_bangsa_1",
+    "title": "Profil Rumah Sakit - RSUD Harapan Bangsa 1",
+    "content": "RSUD Harapan Bangsa 1 adalah rumah sakit kelas C dengan kepemilikan Pemerintah Daerah, berlokasi di provinsi Sulawesi Tenggara (kawasan Sulawesi). Skor kematangan digital rumah sakit ini adalah 30.1, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 59.4 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp83.5 juta dengan 4 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 2.77), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rsud_permata_bunda_5",
+    "title": "Profil Rumah Sakit - RSUD Permata Bunda 5",
+    "content": "RSUD Permata Bunda 5 adalah rumah sakit kelas B dengan kepemilikan Pemerintah Daerah, berlokasi di provinsi Sulawesi Tenggara (kawasan Sulawesi). Skor kematangan digital rumah sakit ini adalah 35.3, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 81.1 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp91.1 juta dengan 1 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 2.58), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_bhakti_husada_7",
+    "title": "Profil Rumah Sakit - RS Bhakti Husada 7",
+    "content": "RS Bhakti Husada 7 adalah rumah sakit kelas D dengan kepemilikan Swasta, berlokasi di provinsi Sulawesi Tenggara (kawasan Sulawesi). Skor kematangan digital rumah sakit ini adalah 19.6, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 105.3 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp5.0 juta dengan 2 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 0.26), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_bunda_kasih_1",
+    "title": "Profil Rumah Sakit - RS Bunda Kasih 1",
+    "content": "RS Bunda Kasih 1 adalah rumah sakit kelas C dengan kepemilikan Swasta, berlokasi di provinsi Sulawesi Barat (kawasan Sulawesi). Skor kematangan digital rumah sakit ini adalah 25.1, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 87.2 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp39.8 juta dengan 1 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 1.59), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_karya_insani_5",
+    "title": "Profil Rumah Sakit - RS Karya Insani 5",
+    "content": "RS Karya Insani 5 adalah rumah sakit kelas A dengan kepemilikan Swasta, berlokasi di provinsi Sulawesi Barat (kawasan Sulawesi). Skor kematangan digital rumah sakit ini adalah 41.6, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 59.1 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp81.9 juta dengan 4 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 1.97), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_permata_bunda_9",
+    "title": "Profil Rumah Sakit - RS Permata Bunda 9",
+    "content": "RS Permata Bunda 9 adalah rumah sakit kelas C dengan kepemilikan Swasta, berlokasi di provinsi Sulawesi Barat (kawasan Sulawesi). Skor kematangan digital rumah sakit ini adalah 26.5, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 68.6 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp108.3 juta dengan 6 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 4.09), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_permata_bunda_2",
+    "title": "Profil Rumah Sakit - RS Permata Bunda 2",
+    "content": "RS Permata Bunda 2 adalah rumah sakit kelas C dengan kepemilikan Pemerintah Pusat, berlokasi di provinsi Nusa Tenggara Barat (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 20.1, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 81.6 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp48.9 juta dengan 2 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 2.43), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_permata_bunda_7",
+    "title": "Profil Rumah Sakit - RS Permata Bunda 7",
+    "content": "RS Permata Bunda 7 adalah rumah sakit kelas D dengan kepemilikan Swasta, berlokasi di provinsi Nusa Tenggara Barat (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 9.0, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 83.4 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp17.6 juta dengan 2 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 1.96), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_bhakti_husada_2",
+    "title": "Profil Rumah Sakit - RS Bhakti Husada 2",
+    "content": "RS Bhakti Husada 2 adalah rumah sakit kelas B dengan kepemilikan Swasta, berlokasi di provinsi Nusa Tenggara Timur (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 31.3, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 111.2 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp80.5 juta dengan 1 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 2.57), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_sentosa_medika_5",
+    "title": "Profil Rumah Sakit - RS Sentosa Medika 5",
+    "content": "RS Sentosa Medika 5 adalah rumah sakit kelas D dengan kepemilikan Pemerintah Pusat, berlokasi di provinsi Nusa Tenggara Timur (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 35.1, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 82.1 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp79.5 juta dengan 7 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 2.26), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rsud_karya_insani_8",
+    "title": "Profil Rumah Sakit - RSUD Karya Insani 8",
+    "content": "RSUD Karya Insani 8 adalah rumah sakit kelas C dengan kepemilikan Pemerintah Daerah, berlokasi di provinsi Nusa Tenggara Timur (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 21.4, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 63.0 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp81.9 juta dengan 1 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 3.83), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_cahaya_medika_5",
+    "title": "Profil Rumah Sakit - RS Cahaya Medika 5",
+    "content": "RS Cahaya Medika 5 adalah rumah sakit kelas D dengan kepemilikan Swasta, berlokasi di provinsi Maluku Utara (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 36.5, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 84.8 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp88.4 juta dengan 0 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 2.42), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_cahaya_medika_6",
+    "title": "Profil Rumah Sakit - RS Cahaya Medika 6",
+    "content": "RS Cahaya Medika 6 adalah rumah sakit kelas C dengan kepemilikan Swasta, berlokasi di provinsi Maluku Utara (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 29.3, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 75.1 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp77.1 juta dengan 6 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 2.63), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rsud_sejahtera_6",
+    "title": "Profil Rumah Sakit - RSUD Sejahtera 6",
+    "content": "RSUD Sejahtera 6 adalah rumah sakit kelas B dengan kepemilikan Pemerintah Daerah, berlokasi di provinsi Papua (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 32.1, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 83.0 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp118.1 juta dengan 6 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 3.68), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_bhakti_husada_8",
+    "title": "Profil Rumah Sakit - RS Bhakti Husada 8",
+    "content": "RS Bhakti Husada 8 adalah rumah sakit kelas D dengan kepemilikan Bumn, berlokasi di provinsi Papua (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 36.3, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 70.1 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp92.9 juta dengan 4 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 2.56), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_husada_mulia_3",
+    "title": "Profil Rumah Sakit - RS Husada Mulia 3",
+    "content": "RS Husada Mulia 3 adalah rumah sakit kelas D dengan kepemilikan Swasta, berlokasi di provinsi Papua Barat (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 12.5, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 84.1 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp5.0 juta dengan 0 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 0.40), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rsud_medika_utama_5",
+    "title": "Profil Rumah Sakit - RSUD Medika Utama 5",
+    "content": "RSUD Medika Utama 5 adalah rumah sakit kelas B dengan kepemilikan Pemerintah Daerah, berlokasi di provinsi Papua Barat (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 36.4, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 61.9 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp62.1 juta dengan 5 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 1.71), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_harapan_bangsa_6",
+    "title": "Profil Rumah Sakit - RS Harapan Bangsa 6",
+    "content": "RS Harapan Bangsa 6 adalah rumah sakit kelas C dengan kepemilikan Swasta, berlokasi di provinsi Papua Barat (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 37.5, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 63.0 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp101.8 juta dengan 2 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 2.71), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_graha_sehat_3",
+    "title": "Profil Rumah Sakit - RS Graha Sehat 3",
+    "content": "RS Graha Sehat 3 adalah rumah sakit kelas B dengan kepemilikan Swasta, berlokasi di provinsi Papua Tengah (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 31.9, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 103.6 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp89.8 juta dengan 3 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 2.82), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  },
+  {
+    "id": "hospital_rs_harapan_bangsa_4",
+    "title": "Profil Rumah Sakit - RS Harapan Bangsa 4",
+    "content": "RS Harapan Bangsa 4 adalah rumah sakit kelas D dengan kepemilikan Swasta, berlokasi di provinsi Papua Tengah (kawasan Indonesia Timur). Skor kematangan digital rumah sakit ini adalah 32.7, berada di bawah median nasional sebesar 57.7. Waktu respons rujukan rata-rata adalah 83.6 menit, lebih lambat dari median nasional sebesar 46.5 menit. Anggaran IT tahunan rumah sakit ini adalah Rp67.1 juta dengan 3 staf IT. Rumah sakit ini termasuk dalam klaster 1 hasil segmentasi Pilar 3, dan ter-flag sebagai kasus inefisiensi ganda, yaitu kombinasi skor kematangan digital rendah dan waktu respons rujukan lambat secara bersamaan. Insight utama: rumah sakit ini menjadi kandidat prioritas untuk intervensi, dan mengingat rasio anggaran terhadap skor digital (efisiensi anggaran IT sebesar 2.05), penambahan staf IT kemungkinan memberi dampak lebih cepat dibandingkan penambahan anggaran perangkat keras semata.",
+    "metadata": {
+      "category": "profil_rumah_sakit",
+      "pilar": "pilar_1_dan_3"
+    }
+  }
+]

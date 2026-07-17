@@ -1,0 +1,7 @@
+Variabel,Target,Efek (OLS Koef),Signifikansi
+Gap Digital +10 poin (vs rata-rata kelas),Waktu Respons (menit),-3.268 menit,*   p<0.05
+Gap Digital +10 poin (vs rata-rata kelas),Lama Rawat (hari),-0.075 hari,    tidak sig (p=0.456)
+SatuSehat (Ya vs Tidak),Waktu Respons (menit),+9.114 menit,    tidak sig (p=0.080)
+SatuSehat (Ya vs Tidak),Lama Rawat (hari),-0.479 hari,    tidak sig (p=0.165)
+RME (Ya vs Tidak),Waktu Respons (menit),-7.586 menit,    tidak sig (p=0.253)
+RME (Ya vs Tidak),Lama Rawat (hari),+0.056 hari,    tidak sig (p=0.898)

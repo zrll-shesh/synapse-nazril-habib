@@ -1,0 +1,38 @@
+[
+  {
+    "Variabel":"Gap Digital +10 poin (vs rata-rata kelas)",
+    "Target":"Waktu Respons (menit)",
+    "Efek (OLS Koef)":"-3.268 menit",
+    "Signifikansi":"*   p<0.05"
+  },
+  {
+    "Variabel":"Gap Digital +10 poin (vs rata-rata kelas)",
+    "Target":"Lama Rawat (hari)",
+    "Efek (OLS Koef)":"-0.075 hari",
+    "Signifikansi":"    tidak sig (p=0.456)"
+  },
+  {
+    "Variabel":"SatuSehat (Ya vs Tidak)",
+    "Target":"Waktu Respons (menit)",
+    "Efek (OLS Koef)":"+9.114 menit",
+    "Signifikansi":"    tidak sig (p=0.080)"
+  },
+  {
+    "Variabel":"SatuSehat (Ya vs Tidak)",
+    "Target":"Lama Rawat (hari)",
+    "Efek (OLS Koef)":"-0.479 hari",
+    "Signifikansi":"    tidak sig (p=0.165)"
+  },
+  {
+    "Variabel":"RME (Ya vs Tidak)",
+    "Target":"Waktu Respons (menit)",
+    "Efek (OLS Koef)":"-7.586 menit",
+    "Signifikansi":"    tidak sig (p=0.253)"
+  },
+  {
+    "Variabel":"RME (Ya vs Tidak)",
+    "Target":"Lama Rawat (hari)",
+    "Efek (OLS Koef)":"+0.056 hari",
+    "Signifikansi":"    tidak sig (p=0.898)"
+  }
+]

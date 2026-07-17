@@ -1,0 +1,1934 @@
+[
+  {
+    "nama_rumah_sakit":"RS Bunda Kasih 1",
+    "umap_x":-2.9167314,
+    "umap_y":3.4207263,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Graha Sehat 2",
+    "umap_x":-2.0602572,
+    "umap_y":3.362997,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Bhakti Husada 3",
+    "umap_x":-1.5357772,
+    "umap_y":0.69301975,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Harapan Bangsa 4",
+    "umap_x":-2.039926,
+    "umap_y":2.6469264,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Karya Insani 5",
+    "umap_x":0.03988709,
+    "umap_y":0.41680658,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 6",
+    "umap_x":0.33223712,
+    "umap_y":2.4096813,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Cahaya Medika 1",
+    "umap_x":-0.19052874,
+    "umap_y":1.5705183,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 2",
+    "umap_x":-3.3796525,
+    "umap_y":3.511319,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 3",
+    "umap_x":-0.93232054,
+    "umap_y":0.4865623,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Citra Medika 4",
+    "umap_x":-2.720073,
+    "umap_y":4.0687194,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Karya Insani 5",
+    "umap_x":-1.483945,
+    "umap_y":2.6508548,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 6",
+    "umap_x":-2.503894,
+    "umap_y":4.2194023,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 1",
+    "umap_x":-0.4385031,
+    "umap_y":0.0801614,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 2",
+    "umap_x":2.8174372,
+    "umap_y":3.5479076,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Karya Insani 3",
+    "umap_x":2.8996224,
+    "umap_y":2.8970897,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Karya Insani 4",
+    "umap_x":-0.099374555,
+    "umap_y":-0.10136782,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Graha Sehat 5",
+    "umap_x":-2.1494467,
+    "umap_y":2.012323,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 6",
+    "umap_x":-0.59969985,
+    "umap_y":0.5038923,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bunda Kasih 7",
+    "umap_x":-1.2525543,
+    "umap_y":2.7337558,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sentosa Medika 8",
+    "umap_x":-3.3445694,
+    "umap_y":3.4312036,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 9",
+    "umap_x":0.7326731,
+    "umap_y":3.4107652,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Husada Mulia 10",
+    "umap_x":3.323431,
+    "umap_y":3.532788,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 1",
+    "umap_x":1.4803327,
+    "umap_y":3.149881,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 2",
+    "umap_x":0.84181833,
+    "umap_y":3.2630696,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Permata Bunda 3",
+    "umap_x":1.6475531,
+    "umap_y":5.0452833,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Graha Sehat 4",
+    "umap_x":-3.0488372,
+    "umap_y":2.932708,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 5",
+    "umap_x":3.5668035,
+    "umap_y":3.5308228,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 6",
+    "umap_x":-1.2655942,
+    "umap_y":1.4115921,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 1",
+    "umap_x":-0.13640714,
+    "umap_y":4.739646,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Cahaya Medika 2",
+    "umap_x":-3.3044736,
+    "umap_y":3.1433084,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 3",
+    "umap_x":0.17751011,
+    "umap_y":5.8655024,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Citra Medika 4",
+    "umap_x":-1.0509667,
+    "umap_y":4.0543046,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 5",
+    "umap_x":0.3812416,
+    "umap_y":3.0427868,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Graha Sehat 6",
+    "umap_x":-1.3838841,
+    "umap_y":4.0707974,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 1",
+    "umap_x":-1.4773916,
+    "umap_y":3.37042,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Husada Mulia 2",
+    "umap_x":-3.4696255,
+    "umap_y":3.8624604,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bunda Kasih 3",
+    "umap_x":0.34762737,
+    "umap_y":3.587921,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sentosa Medika 4",
+    "umap_x":-1.2366384,
+    "umap_y":1.673453,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 5",
+    "umap_x":-1.8925695,
+    "umap_y":0.8285258,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 6",
+    "umap_x":-2.6978118,
+    "umap_y":3.267563,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 7",
+    "umap_x":-1.7006404,
+    "umap_y":0.8968811,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 8",
+    "umap_x":1.321637,
+    "umap_y":3.2576578,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 9",
+    "umap_x":0.35194004,
+    "umap_y":3.5301473,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 1",
+    "umap_x":0.023091536,
+    "umap_y":3.9975667,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Citra Medika 2",
+    "umap_x":-1.5289649,
+    "umap_y":0.47851133,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 3",
+    "umap_x":-1.7285618,
+    "umap_y":2.8813596,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 4",
+    "umap_x":-1.6681198,
+    "umap_y":3.5294366,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 5",
+    "umap_x":0.2838281,
+    "umap_y":3.1114097,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 6",
+    "umap_x":-2.6905513,
+    "umap_y":2.8118207,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 7",
+    "umap_x":-0.42057917,
+    "umap_y":0.11501064,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Medika Utama 1",
+    "umap_x":0.8478193,
+    "umap_y":2.3669388,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Permata Bunda 2",
+    "umap_x":0.7135175,
+    "umap_y":2.3942246,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 3",
+    "umap_x":3.3389122,
+    "umap_y":4.1488175,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 4",
+    "umap_x":2.833546,
+    "umap_y":2.693266,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 5",
+    "umap_x":1.6824533,
+    "umap_y":5.6834707,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 6",
+    "umap_x":-3.2194695,
+    "umap_y":3.2644045,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 7",
+    "umap_x":-1.4145468,
+    "umap_y":3.226105,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 8",
+    "umap_x":-2.5799847,
+    "umap_y":3.684043,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 9",
+    "umap_x":1.2443528,
+    "umap_y":1.9011954,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 1",
+    "umap_x":3.7297227,
+    "umap_y":4.309759,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 2",
+    "umap_x":-0.44010282,
+    "umap_y":4.6601925,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Graha Sehat 3",
+    "umap_x":-1.5032647,
+    "umap_y":0.81204295,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sentosa Medika 4",
+    "umap_x":0.6732957,
+    "umap_y":4.240516,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 5",
+    "umap_x":0.008557457,
+    "umap_y":2.300085,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 6",
+    "umap_x":0.037964597,
+    "umap_y":1.7473307,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Citra Medika 1",
+    "umap_x":-0.9900567,
+    "umap_y":1.1772796,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 2",
+    "umap_x":-3.1601129,
+    "umap_y":4.189253,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 3",
+    "umap_x":-1.0600693,
+    "umap_y":1.3388913,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 4",
+    "umap_x":-0.08099697,
+    "umap_y":3.6421783,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Husada Mulia 5",
+    "umap_x":1.3811939,
+    "umap_y":6.860742,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Bunda Kasih 6",
+    "umap_x":-2.9783115,
+    "umap_y":2.8322113,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sejahtera 7",
+    "umap_x":0.775354,
+    "umap_y":0.9170513,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 8",
+    "umap_x":0.881371,
+    "umap_y":1.7696292,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Graha Sehat 1",
+    "umap_x":1.5788653,
+    "umap_y":0.63038075,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Graha Sehat 2",
+    "umap_x":-1.344412,
+    "umap_y":3.8014119,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 3",
+    "umap_x":0.32624796,
+    "umap_y":0.24984598,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Cahaya Medika 4",
+    "umap_x":2.19862,
+    "umap_y":2.4258847,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Bunda Kasih 5",
+    "umap_x":-0.7585695,
+    "umap_y":3.464764,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sejahtera 6",
+    "umap_x":-0.14986597,
+    "umap_y":1.9670571,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Graha Sehat 7",
+    "umap_x":-0.81230175,
+    "umap_y":4.097042,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Husada Mulia 8",
+    "umap_x":1.4414779,
+    "umap_y":0.40946895,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 9",
+    "umap_x":0.38265106,
+    "umap_y":4.69246,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Cahaya Medika 1",
+    "umap_x":-0.30540225,
+    "umap_y":3.2072113,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 2",
+    "umap_x":0.29084933,
+    "umap_y":3.1295383,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 3",
+    "umap_x":1.3082917,
+    "umap_y":6.202257,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 4",
+    "umap_x":-0.18044394,
+    "umap_y":0.47516364,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 5",
+    "umap_x":2.6633947,
+    "umap_y":2.9191391,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 6",
+    "umap_x":2.035093,
+    "umap_y":1.4298486,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 1",
+    "umap_x":-0.52372634,
+    "umap_y":4.56266,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 2",
+    "umap_x":1.4572507,
+    "umap_y":4.801807,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Husada Mulia 3",
+    "umap_x":1.1607963,
+    "umap_y":1.5274025,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 4",
+    "umap_x":-2.1446178,
+    "umap_y":2.842613,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sentosa Medika 5",
+    "umap_x":0.52098125,
+    "umap_y":2.9618871,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Medika Utama 6",
+    "umap_x":3.268563,
+    "umap_y":2.5618725,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 7",
+    "umap_x":-0.38755453,
+    "umap_y":2.9844577,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 8",
+    "umap_x":1.7854342,
+    "umap_y":3.3426769,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 9",
+    "umap_x":2.3643405,
+    "umap_y":4.4401975,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Karya Insani 10",
+    "umap_x":-0.6808127,
+    "umap_y":1.5068668,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 1",
+    "umap_x":0.030303372,
+    "umap_y":3.8606832,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 2",
+    "umap_x":-3.3122663,
+    "umap_y":4.1594405,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Citra Medika 3",
+    "umap_x":2.8477,
+    "umap_y":3.2658436,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Cahaya Medika 4",
+    "umap_x":-0.6116361,
+    "umap_y":0.8336355,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Graha Sehat 5",
+    "umap_x":0.34138504,
+    "umap_y":2.0220551,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 6",
+    "umap_x":2.7903125,
+    "umap_y":2.180713,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RSUD Bunda Kasih 7",
+    "umap_x":0.024734946,
+    "umap_y":3.4676626,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 8",
+    "umap_x":-0.34072316,
+    "umap_y":2.31227,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 1",
+    "umap_x":-0.76023626,
+    "umap_y":2.4082332,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 2",
+    "umap_x":-1.2634966,
+    "umap_y":3.0906966,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Bhakti Husada 3",
+    "umap_x":-2.3637002,
+    "umap_y":2.5882668,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Citra Medika 4",
+    "umap_x":2.8190057,
+    "umap_y":4.6723294,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bunda Kasih 5",
+    "umap_x":-1.0081127,
+    "umap_y":2.8835394,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 6",
+    "umap_x":-1.5818887,
+    "umap_y":2.7619138,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 7",
+    "umap_x":0.11448448,
+    "umap_y":5.045203,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Citra Medika 1",
+    "umap_x":1.9328866,
+    "umap_y":2.6919827,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Graha Sehat 2",
+    "umap_x":0.9711764,
+    "umap_y":1.9711753,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 3",
+    "umap_x":-1.916596,
+    "umap_y":3.087707,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 4",
+    "umap_x":4.031963,
+    "umap_y":4.6105947,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sentosa Medika 5",
+    "umap_x":1.2815,
+    "umap_y":5.118862,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 6",
+    "umap_x":0.7332798,
+    "umap_y":0.45369798,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 7",
+    "umap_x":-3.1561303,
+    "umap_y":3.7112303,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Bhakti Husada 1",
+    "umap_x":3.3379486,
+    "umap_y":4.69138,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 2",
+    "umap_x":2.395939,
+    "umap_y":6.0344815,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 3",
+    "umap_x":-0.5407074,
+    "umap_y":3.383675,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 4",
+    "umap_x":2.9732888,
+    "umap_y":3.0687702,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 5",
+    "umap_x":3.082907,
+    "umap_y":3.4647338,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 6",
+    "umap_x":2.788827,
+    "umap_y":3.834437,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 1",
+    "umap_x":1.787368,
+    "umap_y":3.1439736,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Karya Insani 2",
+    "umap_x":-1.8660674,
+    "umap_y":1.1763197,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 3",
+    "umap_x":0.7947995,
+    "umap_y":3.6565368,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 4",
+    "umap_x":1.3288028,
+    "umap_y":2.1279037,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 5",
+    "umap_x":-1.0976084,
+    "umap_y":2.274744,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Permata Bunda 6",
+    "umap_x":1.4038596,
+    "umap_y":2.242326,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 1",
+    "umap_x":-1.7684313,
+    "umap_y":4.236875,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 2",
+    "umap_x":0.18910174,
+    "umap_y":2.0563245,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Medika Utama 3",
+    "umap_x":-0.76364917,
+    "umap_y":1.0796196,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 4",
+    "umap_x":1.5447282,
+    "umap_y":1.6008425,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Harapan Bangsa 5",
+    "umap_x":-0.6995355,
+    "umap_y":2.5965297,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 6",
+    "umap_x":0.8875032,
+    "umap_y":5.101915,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 7",
+    "umap_x":0.68202573,
+    "umap_y":2.924592,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 8",
+    "umap_x":0.9743708,
+    "umap_y":4.250938,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 1",
+    "umap_x":-0.5160523,
+    "umap_y":1.3106142,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sentosa Medika 2",
+    "umap_x":-1.2025112,
+    "umap_y":0.7904045,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 3",
+    "umap_x":-1.7206348,
+    "umap_y":2.335465,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 4",
+    "umap_x":1.1053619,
+    "umap_y":6.3398805,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 5",
+    "umap_x":-0.69943047,
+    "umap_y":0.4164391,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Graha Sehat 6",
+    "umap_x":1.129404,
+    "umap_y":0.70226175,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Bunda Kasih 7",
+    "umap_x":-0.41527113,
+    "umap_y":3.8994846,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Harapan Bangsa 8",
+    "umap_x":0.027964385,
+    "umap_y":0.7263834,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 9",
+    "umap_x":-1.2840606,
+    "umap_y":3.5024374,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 10",
+    "umap_x":2.254908,
+    "umap_y":4.2868824,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Harapan Bangsa 1",
+    "umap_x":2.322465,
+    "umap_y":3.69995,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 2",
+    "umap_x":-2.061698,
+    "umap_y":0.90732104,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Husada Mulia 3",
+    "umap_x":1.8109956,
+    "umap_y":5.9732885,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 4",
+    "umap_x":-3.2129557,
+    "umap_y":4.0777626,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Cahaya Medika 5",
+    "umap_x":0.484528,
+    "umap_y":5.782881,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Bunda Kasih 6",
+    "umap_x":0.77440596,
+    "umap_y":2.1054811,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 7",
+    "umap_x":2.1518738,
+    "umap_y":4.8813295,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Citra Medika 8",
+    "umap_x":0.013786693,
+    "umap_y":2.706389,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Karya Insani 9",
+    "umap_x":2.505735,
+    "umap_y":2.7125077,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sentosa Medika 10",
+    "umap_x":-0.29932085,
+    "umap_y":1.2932885,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Permata Bunda 1",
+    "umap_x":-0.10648992,
+    "umap_y":4.4208994,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Bhakti Husada 2",
+    "umap_x":0.6962254,
+    "umap_y":1.5417104,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Harapan Bangsa 3",
+    "umap_x":2.1946812,
+    "umap_y":5.777771,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 4",
+    "umap_x":2.3462992,
+    "umap_y":4.0442753,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 5",
+    "umap_x":1.5533687,
+    "umap_y":7.0105057,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 6",
+    "umap_x":2.4478395,
+    "umap_y":2.5111208,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Cahaya Medika 7",
+    "umap_x":-0.74327177,
+    "umap_y":2.9104166,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 8",
+    "umap_x":2.5743592,
+    "umap_y":1.0714663,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 9",
+    "umap_x":2.7573822,
+    "umap_y":4.6477695,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Cahaya Medika 10",
+    "umap_x":2.1570504,
+    "umap_y":5.79418,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 1",
+    "umap_x":1.8563505,
+    "umap_y":3.727889,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sejahtera 2",
+    "umap_x":2.2531796,
+    "umap_y":2.0405283,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 3",
+    "umap_x":1.3353864,
+    "umap_y":1.2924381,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 4",
+    "umap_x":-1.3394933,
+    "umap_y":0.49945995,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Karya Insani 5",
+    "umap_x":2.5496829,
+    "umap_y":2.9646366,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 6",
+    "umap_x":1.2779388,
+    "umap_y":0.27744767,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Cahaya Medika 7",
+    "umap_x":-1.3188102,
+    "umap_y":3.8201203,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Bhakti Husada 8",
+    "umap_x":2.33957,
+    "umap_y":5.660063,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Graha Sehat 1",
+    "umap_x":-0.8504173,
+    "umap_y":1.5861645,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 2",
+    "umap_x":-1.2003795,
+    "umap_y":0.6558051,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 3",
+    "umap_x":1.3613274,
+    "umap_y":3.6354334,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sentosa Medika 4",
+    "umap_x":1.0111084,
+    "umap_y":6.2172666,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Harapan Bangsa 5",
+    "umap_x":0.58364326,
+    "umap_y":2.8862908,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 6",
+    "umap_x":-1.589344,
+    "umap_y":1.6642945,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 7",
+    "umap_x":-2.1896126,
+    "umap_y":4.003063,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 8",
+    "umap_x":0.8824419,
+    "umap_y":6.323224,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bunda Kasih 9",
+    "umap_x":1.0672283,
+    "umap_y":5.88658,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Husada Mulia 10",
+    "umap_x":-1.7304921,
+    "umap_y":2.7803874,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Cahaya Medika 1",
+    "umap_x":0.08907429,
+    "umap_y":-0.0005493573,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Husada Mulia 2",
+    "umap_x":2.4774046,
+    "umap_y":2.111587,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 3",
+    "umap_x":0.36734593,
+    "umap_y":-0.03214113,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 4",
+    "umap_x":-0.527829,
+    "umap_y":2.3875637,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Medika Utama 5",
+    "umap_x":0.97910094,
+    "umap_y":3.588246,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 6",
+    "umap_x":0.8208015,
+    "umap_y":6.139527,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 7",
+    "umap_x":0.53620774,
+    "umap_y":1.4262804,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Harapan Bangsa 1",
+    "umap_x":2.25362,
+    "umap_y":6.305243,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 2",
+    "umap_x":2.4599166,
+    "umap_y":1.3705021,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Graha Sehat 3",
+    "umap_x":1.2372208,
+    "umap_y":5.4302473,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sentosa Medika 4",
+    "umap_x":0.8759301,
+    "umap_y":2.7129767,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Permata Bunda 5",
+    "umap_x":3.09533,
+    "umap_y":5.776965,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 6",
+    "umap_x":1.2696869,
+    "umap_y":2.2548625,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 7",
+    "umap_x":2.6733017,
+    "umap_y":1.078258,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 8",
+    "umap_x":1.0328141,
+    "umap_y":4.105305,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 1",
+    "umap_x":1.5891764,
+    "umap_y":6.2142806,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 2",
+    "umap_x":1.6692492,
+    "umap_y":3.3224869,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Harapan Bangsa 3",
+    "umap_x":1.8892629,
+    "umap_y":6.534879,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sejahtera 4",
+    "umap_x":1.7073979,
+    "umap_y":0.68616,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 5",
+    "umap_x":3.6724875,
+    "umap_y":2.3923352,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 6",
+    "umap_x":1.8189437,
+    "umap_y":1.4318922,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Karya Insani 7",
+    "umap_x":1.4316765,
+    "umap_y":7.0040636,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 8",
+    "umap_x":1.3074447,
+    "umap_y":6.9667516,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 9",
+    "umap_x":1.4299896,
+    "umap_y":6.789618,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bunda Kasih 1",
+    "umap_x":3.3341277,
+    "umap_y":1.92627,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RSUD Graha Sehat 2",
+    "umap_x":2.2701216,
+    "umap_y":5.5295725,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Bunda Kasih 3",
+    "umap_x":0.53133416,
+    "umap_y":5.6055427,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Permata Bunda 4",
+    "umap_x":2.8331654,
+    "umap_y":5.387993,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 5",
+    "umap_x":2.141289,
+    "umap_y":1.9515104,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 6",
+    "umap_x":0.17528555,
+    "umap_y":3.5046575,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 7",
+    "umap_x":2.5505955,
+    "umap_y":5.331817,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sejahtera 8",
+    "umap_x":2.3247738,
+    "umap_y":1.8490304,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 9",
+    "umap_x":1.7333255,
+    "umap_y":6.962229,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RSUD Husada Mulia 1",
+    "umap_x":1.692374,
+    "umap_y":4.2288003,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 2",
+    "umap_x":3.4819493,
+    "umap_y":5.4701543,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 3",
+    "umap_x":2.671387,
+    "umap_y":5.5337324,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 4",
+    "umap_x":1.5549241,
+    "umap_y":1.2000543,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 5",
+    "umap_x":0.57835764,
+    "umap_y":4.8407226,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Husada Mulia 6",
+    "umap_x":-0.48517475,
+    "umap_y":0.8308145,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 7",
+    "umap_x":3.365656,
+    "umap_y":5.229632,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Karya Insani 8",
+    "umap_x":-0.2609884,
+    "umap_y":0.95613426,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Permata Bunda 1",
+    "umap_x":2.5613236,
+    "umap_y":5.1839066,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 2",
+    "umap_x":3.734071,
+    "umap_y":5.1734324,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 3",
+    "umap_x":1.2037388,
+    "umap_y":3.0819342,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sejahtera 4",
+    "umap_x":1.9752442,
+    "umap_y":5.584206,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 5",
+    "umap_x":3.5830266,
+    "umap_y":4.6468787,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 6",
+    "umap_x":2.6684089,
+    "umap_y":1.0149003,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Harapan Bangsa 7",
+    "umap_x":3.3324802,
+    "umap_y":2.239259,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Karya Insani 8",
+    "umap_x":1.7225188,
+    "umap_y":6.8650203,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RSUD Husada Mulia 9",
+    "umap_x":1.9241796,
+    "umap_y":4.741524,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 1",
+    "umap_x":0.3017277,
+    "umap_y":5.2815557,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 2",
+    "umap_x":3.711602,
+    "umap_y":3.14379,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Karya Insani 3",
+    "umap_x":2.9548333,
+    "umap_y":1.5032811,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Cahaya Medika 4",
+    "umap_x":-1.9043177,
+    "umap_y":2.1061575,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Karya Insani 5",
+    "umap_x":1.5438325,
+    "umap_y":4.197185,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Cahaya Medika 6",
+    "umap_x":1.6569921,
+    "umap_y":4.618591,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 7",
+    "umap_x":1.3618503,
+    "umap_y":4.12026,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bunda Kasih 1",
+    "umap_x":2.212363,
+    "umap_y":3.9616513,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 2",
+    "umap_x":3.9501917,
+    "umap_y":4.6286836,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Medika Utama 3",
+    "umap_x":-1.3884896,
+    "umap_y":1.024453,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 4",
+    "umap_x":3.070871,
+    "umap_y":4.285394,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Cahaya Medika 5",
+    "umap_x":3.9000504,
+    "umap_y":4.844766,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Cahaya Medika 6",
+    "umap_x":2.8505473,
+    "umap_y":5.8731236,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 1",
+    "umap_x":-0.647044,
+    "umap_y":1.8608704,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Citra Medika 2",
+    "umap_x":3.0384076,
+    "umap_y":1.8867402,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 3",
+    "umap_x":-0.45134857,
+    "umap_y":2.082683,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 4",
+    "umap_x":3.732845,
+    "umap_y":2.99158,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Graha Sehat 5",
+    "umap_x":0.6804459,
+    "umap_y":0.5943074,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sejahtera 6",
+    "umap_x":2.1733987,
+    "umap_y":6.769769,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RSUD Cahaya Medika 7",
+    "umap_x":1.5068309,
+    "umap_y":2.136023,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 8",
+    "umap_x":3.65422,
+    "umap_y":4.7888474,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Permata Bunda 1",
+    "umap_x":1.9399227,
+    "umap_y":5.9447074,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 2",
+    "umap_x":2.1852477,
+    "umap_y":2.8079572,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 3",
+    "umap_x":2.8552806,
+    "umap_y":1.1919457,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Sentosa Medika 4",
+    "umap_x":-0.80425566,
+    "umap_y":1.359204,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Medika Utama 5",
+    "umap_x":3.2495787,
+    "umap_y":1.9298301,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 6",
+    "umap_x":2.8264997,
+    "umap_y":4.04267,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Bunda Kasih 7",
+    "umap_x":0.50721836,
+    "umap_y":0.81830055,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Sejahtera 8",
+    "umap_x":2.69584,
+    "umap_y":4.285276,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Bhakti Husada 1",
+    "umap_x":1.9272,
+    "umap_y":2.4919865,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Graha Sehat 2",
+    "umap_x":1.2294903,
+    "umap_y":2.6255128,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Graha Sehat 3",
+    "umap_x":3.472233,
+    "umap_y":5.4881277,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RS Harapan Bangsa 4",
+    "umap_x":3.5032563,
+    "umap_y":2.6834822,
+    "cluster":1,
+    "flag_double_inefficiency":1
+  },
+  {
+    "nama_rumah_sakit":"RSUD Graha Sehat 5",
+    "umap_x":2.1004782,
+    "umap_y":4.7622576,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Husada Mulia 6",
+    "umap_x":3.0097685,
+    "umap_y":5.616845,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 2",
+    "umap_x":3.6830084,
+    "umap_y":3.1915445,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RS Sejahtera 2",
+    "umap_x":-3.0659316,
+    "umap_y":4.3356004,
+    "cluster":0,
+    "flag_double_inefficiency":0
+  },
+  {
+    "nama_rumah_sakit":"RSUD Husada Mulia 1",
+    "umap_x":1.6471448,
+    "umap_y":4.081058,
+    "cluster":1,
+    "flag_double_inefficiency":0
+  }
+]

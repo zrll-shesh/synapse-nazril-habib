@@ -1,0 +1,3 @@
+Pilar 3 - Profil Klaster 0 (Digital Leaders)
+
+Klaster 0 beranggotakan 26 rumah sakit dari total 276 rumah sakit dalam dataset. Rata-rata skor kematangan digital pada klaster ini adalah 66.28 (tergolong tinggi dibanding klaster lain), dengan rata-rata waktu respons rujukan 37.60 menit (tergolong cepat). Rata-rata tingkat keterisian tempat tidur adalah 64.05 persen, beban pasien per staf 3.46, dan rasio adopsi telemedicine 35.10 persen. Sebanyak 0.0 persen anggota klaster ini juga ter-flag sebagai inefisiensi ganda pada analisis independen. Label bisnis yang paling sesuai untuk klaster ini adalah Digital Leaders. Insight utama: klaster ini menjadi acuan praktik terbaik karena mencapai efisiensi operasional tertinggi berbasis kematangan digital.

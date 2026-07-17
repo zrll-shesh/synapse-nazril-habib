@@ -1,0 +1,10 @@
+Masalah,Penanganan
+Inkonsistensi kelas_rumah_sakit,strip() + upper()
+Inkonsistensi kepemilikan,strip() + title() + sinonim
+Outlier jumlah_tempat_tidur (>P99),Cap ke median kelas RS
+BOR >100%,Clip ke 100%
+ALOS negatif (entry error),Set NaN → median per (kelas×kepemilikan)
+Waktu respons = 0 (hidden missing),Set NaN → median per (kelas×kepemilikan)
+Missing kunjungan_telemedicine (2.9%),Median per (kelas×kepemilikan)
+Missing jumlah_staf_it (2.9%),Median per (kelas×kepemilikan)
+Missing anggaran_it (2.9%),Median per (kelas×kepemilikan)

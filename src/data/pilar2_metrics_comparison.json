@@ -1,0 +1,34 @@
+[
+  {
+    "Target":"Waktu Respons (menit)",
+    "Model":"OLS (in-sample)",
+    "R2":0.1989,
+    "Adj.R2":"0.1223",
+    "RMSE":"18.9383",
+    "MAE":"15.1437"
+  },
+  {
+    "Target":"Waktu Respons (menit)",
+    "Model":"XGBoost (5-Fold CV)",
+    "R2":-0.0166,
+    "Adj.R2":"-",
+    "RMSE":"21.1827+\/-0.9384",
+    "MAE":"17.0093+\/-0.8609"
+  },
+  {
+    "Target":"Lama Rawat (hari)",
+    "Model":"OLS (in-sample)",
+    "R2":0.1037,
+    "Adj.R2":"0.0180",
+    "RMSE":"1.2575",
+    "MAE":"1.0178"
+  },
+  {
+    "Target":"Lama Rawat (hari)",
+    "Model":"XGBoost (5-Fold CV)",
+    "R2":-0.1811,
+    "Adj.R2":"-",
+    "RMSE":"1.4231+\/-0.1178",
+    "MAE":"1.1335+\/-0.0955"
+  }
+]

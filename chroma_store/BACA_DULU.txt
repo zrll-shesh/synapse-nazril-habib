@@ -1,0 +1,14 @@
+Folder ini sengaja masih KOSONG.
+
+Karena keterbatasan jaringan pada lingkungan pembuatan proyek ini (tidak bisa mengakses
+huggingface.co untuk mengunduh model all-MiniLM-L6-v2), index Chroma belum bisa dibuat otomatis
+di sini.
+
+Jalankan ini SEKALI secara lokal di VSCode Anda (di mesin dengan akses internet normal) sebelum
+menjalankan atau men-deploy fitur chat:
+
+    pip install -r scripts/requirements-build.txt
+    python scripts/build_vector_store.py
+
+Setelah dijalankan, file ini akan otomatis terganti oleh isi index Chroma (folder sqlite +
+parquet), dan folder ini siap di-commit ke git lalu di-deploy ke Vercel.

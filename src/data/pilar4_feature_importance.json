@@ -1,0 +1,74 @@
+[
+  {
+    "Feature":"region_Jawa",
+    "Importance":0.1552442
+  },
+  {
+    "Feature":"kepemilikan_Bumn",
+    "Importance":0.10010167
+  },
+  {
+    "Feature":"region_Sumatera",
+    "Importance":0.0966253
+  },
+  {
+    "Feature":"kepemilikan_Tni\/Polri",
+    "Importance":0.09589178
+  },
+  {
+    "Feature":"region_Bali & Nusa Tenggara",
+    "Importance":0.06732325
+  },
+  {
+    "Feature":"region_Maluku & Papua",
+    "Importance":0.061002254
+  },
+  {
+    "Feature":"kelas_rumah_sakit_D",
+    "Importance":0.060483582
+  },
+  {
+    "Feature":"region_Sulawesi",
+    "Importance":0.046767525
+  },
+  {
+    "Feature":"region_Kalimantan",
+    "Importance":0.046529397
+  },
+  {
+    "Feature":"jumlah_tenaga_kerja",
+    "Importance":0.04037909
+  },
+  {
+    "Feature":"jumlah_jenis_layanan",
+    "Importance":0.039681863
+  },
+  {
+    "Feature":"kelas_rumah_sakit_C",
+    "Importance":0.03887095
+  },
+  {
+    "Feature":"kepemilikan_Swasta",
+    "Importance":0.037975777
+  },
+  {
+    "Feature":"jumlah_tempat_tidur",
+    "Importance":0.037780613
+  },
+  {
+    "Feature":"kepemilikan_Pemerintah Daerah",
+    "Importance":0.031089745
+  },
+  {
+    "Feature":"kelas_rumah_sakit_B",
+    "Importance":0.025886636
+  },
+  {
+    "Feature":"kepemilikan_Pemerintah Pusat",
+    "Importance":0.015722634
+  },
+  {
+    "Feature":"kelas_rumah_sakit_A",
+    "Importance":0.0026437303
+  }
+]

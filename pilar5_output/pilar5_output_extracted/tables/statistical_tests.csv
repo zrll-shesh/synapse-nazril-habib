@@ -1,0 +1,3 @@
+Target,MLP_RMSE_mean,MLP_RMSE_std,XGB_RMSE_mean,XGB_RMSE_std,Diff_mean_MLP_minus_XGB,Wilcoxon_p_NAIF_jangan_pakai,NB_t_stat,NB_p_corrected,Cohen_d_fold_consistency,Winner,Signifikan_NB
+Waktu Respons Rujukan,22.4934,2.0115,22.1199,1.472,0.3735,0.2954728,0.3265,0.7454,0.1697,XGBoost,False
+Rata-rata Lama Rawat (LOS),1.5308,0.1429,1.4995,0.1383,0.0314,0.1255635,0.4252,0.6725,0.221,XGBoost,False

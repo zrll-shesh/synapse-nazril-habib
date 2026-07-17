@@ -1,0 +1,18 @@
+[
+  {
+    "cluster":0,
+    "Bumn":0,
+    "Pemerintah Daerah":10,
+    "Pemerintah Pusat":5,
+    "Swasta":9,
+    "Tni\/Polri":2
+  },
+  {
+    "cluster":1,
+    "Bumn":11,
+    "Pemerintah Daerah":91,
+    "Pemerintah Pusat":19,
+    "Swasta":103,
+    "Tni\/Polri":26
+  }
+]

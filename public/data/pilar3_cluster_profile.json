@@ -1,0 +1,24 @@
+[
+  {
+    "cluster":0,
+    "skor_kematangan_digital":66.285,
+    "rata_rata_waktu_respons_rujukan_menit":37.604,
+    "tingkat_keterisian_tempat_tidur_persen":64.046,
+    "beban_pasien_per_staf":3.462,
+    "efisiensi_anggaran_it":2.033,
+    "rasio_adopsi_telemedicine":0.351,
+    "flag_double_inefficiency":0.0,
+    "jumlah_rs":26
+  },
+  {
+    "cluster":1,
+    "skor_kematangan_digital":56.053,
+    "rata_rata_waktu_respons_rujukan_menit":46.683,
+    "tingkat_keterisian_tempat_tidur_persen":68.319,
+    "beban_pasien_per_staf":4.77,
+    "efisiensi_anggaran_it":2.176,
+    "rasio_adopsi_telemedicine":0.088,
+    "flag_double_inefficiency":0.104,
+    "jumlah_rs":250
+  }
+]

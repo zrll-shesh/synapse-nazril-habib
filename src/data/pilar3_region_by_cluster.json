@@ -1,0 +1,18 @@
+[
+  {
+    "cluster":0,
+    "Indonesia Timur":1,
+    "Jawa":11,
+    "Kalimantan":4,
+    "Sulawesi":2,
+    "Sumatera":8
+  },
+  {
+    "cluster":1,
+    "Indonesia Timur":60,
+    "Jawa":32,
+    "Kalimantan":40,
+    "Sulawesi":49,
+    "Sumatera":69
+  }
+]

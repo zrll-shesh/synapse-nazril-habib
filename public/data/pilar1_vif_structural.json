@@ -1,0 +1,50 @@
+[
+  {
+    "feature":"const",
+    "VIF":47.0147329812
+  },
+  {
+    "feature":"kelas_rumah_sakit_B",
+    "VIF":4.1368575772
+  },
+  {
+    "feature":"kelas_rumah_sakit_C",
+    "VIF":4.8668840615
+  },
+  {
+    "feature":"kelas_rumah_sakit_D",
+    "VIF":4.2221502343
+  },
+  {
+    "feature":"kepemilikan_Pemerintah Daerah",
+    "VIF":6.5618810203
+  },
+  {
+    "feature":"kepemilikan_Pemerintah Pusat",
+    "VIF":2.9247382474
+  },
+  {
+    "feature":"kepemilikan_Swasta",
+    "VIF":6.761434929
+  },
+  {
+    "feature":"kepemilikan_Tni\/Polri",
+    "VIF":3.2662967348
+  },
+  {
+    "feature":"region_Jawa",
+    "VIF":1.4903063528
+  },
+  {
+    "feature":"region_Kalimantan",
+    "VIF":1.5104046705
+  },
+  {
+    "feature":"region_Sulawesi",
+    "VIF":1.539999663
+  },
+  {
+    "feature":"region_Sumatera",
+    "VIF":1.6789262612
+  }
+]

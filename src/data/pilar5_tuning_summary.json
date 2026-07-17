@@ -1,0 +1,26 @@
+[
+  {
+    "Target":"A - Waktu Respons",
+    "Model":"MLP",
+    "Best_CV_RMSE":21.2172,
+    "Best_Params":"{'mlp__learning_rate_init': 0.01, 'mlp__hidden_layer_sizes': (128, 64), 'mlp__alpha': 0.001, 'mlp__activation': 'tanh'}"
+  },
+  {
+    "Target":"B - Lama Rawat",
+    "Model":"MLP",
+    "Best_CV_RMSE":1.4148,
+    "Best_Params":"{'mlp__learning_rate_init': 0.005, 'mlp__hidden_layer_sizes': (64, 32, 16), 'mlp__alpha': 0.001, 'mlp__activation': 'tanh'}"
+  },
+  {
+    "Target":"A - Waktu Respons",
+    "Model":"XGBoost",
+    "Best_CV_RMSE":21.0801,
+    "Best_Params":"{'subsample': 0.7, 'n_estimators': 50, 'min_child_weight': 1, 'max_depth': 3, 'learning_rate': 0.01, 'gamma': 0.1, 'colsample_bytree': 0.6}"
+  },
+  {
+    "Target":"B - Lama Rawat",
+    "Model":"XGBoost",
+    "Best_CV_RMSE":1.3584,
+    "Best_Params":"{'subsample': 0.7, 'n_estimators': 100, 'min_child_weight': 5, 'max_depth': 3, 'learning_rate': 0.01, 'gamma': 0, 'colsample_bytree': 1.0}"
+  }
+]

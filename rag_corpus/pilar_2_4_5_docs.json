@@ -1,0 +1,65 @@
+[
+  {
+    "id": "pilar2_respons_rujukan",
+    "title": "Pilar 2 - Dampak Digital terhadap Waktu Respons Rujukan",
+    "content": "Analisis regresi OLS dan XGBoost dengan interpretasi SHAP terhadap 276 rumah sakit menunjukkan bahwa kecepatan merespons pasien saat dirujuk antar layanan berasosiasi erat dengan tingkat kematangan digital. Setiap kenaikan 10 poin skor digital gap (relatif terhadap rata-rata kelas rumah sakit), waktu respons rujukan berasosiasi dengan penurunan sekitar 3.3 menit, dan hasil ini signifikan secara statistik (p kurang dari 0.05). Sebaliknya, status koneksi SatuSehat dan status implementasi RME belum terbukti berasosiasi secara statistik dengan waktu respons setelah dikontrol variabel lain. Infrastruktur digital seperti jumlah perangkat IoT, staf IT, dan anggaran IT secara konsisten berasosiasi dengan kecepatan respons yang lebih baik menurut analisis SHAP. Insight utama: investasi ekosistem digital, bukan sekadar status kepatuhan administratif, yang berasosiasi dengan kecepatan layanan nyata bagi pasien rujukan darurat.",
+    "metadata": {
+      "category": "dampak_operasional",
+      "pilar": "pilar_2"
+    }
+  },
+  {
+    "id": "pilar2_los_lama_rawat",
+    "title": "Pilar 2 - Digitalisasi Tidak Berdampak pada Lama Rawat Inap (LOS)",
+    "content": "Berbeda dengan waktu respons rujukan, rata-rata lama rawat inap (Length of Stay/LOS) tidak berasosiasi secara statistik dengan variabel digital apa pun setelah multikolinearitas dikoreksi (nilai p untuk digital_gap_score jauh di atas 0.05, tepatnya sekitar 0.456). Status koneksi SatuSehat maupun implementasi RME juga belum terbukti berasosiasi dengan LOS. Temuan ini konsisten dan bermakna: digitalisasi rumah sakit berdampak pada KECEPATAN proses administratif dan koordinasi layanan (waktu respons rujukan), namun tidak pada DURASI klinis perawatan, yang lebih ditentukan oleh faktor medis dan struktural seperti kelas rumah sakit, tingkat keterisian tempat tidur, dan tingkat keparahan penyakit pasien. Insight utama: klaim bahwa digitalisasi mempercepat kepulangan pasien tidak dapat didukung data, dan kejujuran metodologis ini justru memperkuat kredibilitas temuan positif pada waktu respons rujukan.",
+    "metadata": {
+      "category": "dampak_operasional",
+      "pilar": "pilar_2"
+    }
+  },
+  {
+    "id": "pilar2_model_benchmark",
+    "title": "Pilar 2 - Perbandingan Model OLS vs XGBoost",
+    "content": "Model OLS in-sample untuk waktu respons rujukan mencapai R-squared 0.199 (adjusted R-squared 0.122), sedangkan XGBoost dengan validasi silang 5-fold menghasilkan R-squared negatif (-0.017), menunjukkan bahwa model kompleks tidak lebih baik dibanding regresi linear yang lebih sederhana dan interpretable pada data ini. Pola serupa terjadi pada model LOS, dengan OLS R-squared 0.104 dan XGBoost R-squared -0.181. Insight utama: untuk kasus ini, kesederhanaan model regresi linear yang dapat diinterpretasi lebih unggul dibandingkan model machine learning kompleks, karena ukuran data yang terbatas (276 rumah sakit) tidak cukup besar untuk menguntungkan model non-linear.",
+    "metadata": {
+      "category": "dampak_operasional",
+      "pilar": "pilar_2"
+    }
+  },
+  {
+    "id": "pilar4_model_risiko",
+    "title": "Pilar 4 - Sistem Peringatan Dini Risiko Rumah Sakit",
+    "content": "Model prediksi risiko inefisiensi ganda dibangun murni dari profil struktural rumah sakit, tanpa menggunakan skor kematangan digital maupun variabel operasional apa pun, untuk menghindari kebocoran informasi. Model terbaik adalah XGBoost dengan scale_pos_weight, mencapai ROC-AUC 0.693 dan recall 0.160 dalam validasi StratifiedKFold 5-fold, berhasil mendeteksi sekitar 16 persen rumah sakit bermasalah yang sebenarnya ada dalam data. Tiga sinyal struktural yang paling berasosiasi dengan risiko tinggi adalah lokasi di region Jawa, kepemilikan BUMN, dan lokasi di region Sumatera. Insight utama: rumah sakit dengan kapasitas fisik dan SDM terbatas, kelas lebih rendah, dan berlokasi di region dengan infrastruktur digital lebih terbatas secara konsisten menjadi sinyal risiko yang kuat, bahkan sebelum data operasional tersedia.",
+    "metadata": {
+      "category": "prediksi_risiko",
+      "pilar": "pilar_4"
+    }
+  },
+  {
+    "id": "pilar4_keterbatasan_model",
+    "title": "Pilar 4 - Keterbatasan dan Rekomendasi Penggunaan Model",
+    "content": "Recall model sebesar 16 persen berarti sebagian besar rumah sakit bermasalah masih bisa terlewatkan (false negative) oleh model ini. Perbandingan beberapa varian model menunjukkan XGBoost dengan SMOTE mencapai ROC-AUC tertinggi 0.700 namun precision sangat bervariasi, sedangkan XGBoost dengan scale_pos_weight dipilih sebagai model utama karena precision dan recall yang lebih seimbang. Keterbatasan ini disengaja diungkap, bukan disembunyikan, sebagai bentuk kejujuran metodologis. Insight utama: model ini direkomendasikan sebagai lapisan pertama peringatan dini untuk memprioritaskan rumah sakit mana yang perlu mendapat perhatian audit lebih dahulu dari konsorsium, bukan sebagai pengganti audit langsung atau alat keputusan tunggal.",
+    "metadata": {
+      "category": "prediksi_risiko",
+      "pilar": "pilar_4"
+    }
+  },
+  {
+    "id": "pilar5_benchmark_mlp_xgboost",
+    "title": "Pilar 5 - Benchmark Statistik MLP vs XGBoost",
+    "content": "Benchmark dilakukan secara statistik ketat menggunakan koreksi Nadeau-Bengio, bukan sekadar uji Wilcoxon naif yang tidak valid untuk perbandingan model hasil cross-validation. Untuk target waktu respons rujukan, XGBoost mencapai RMSE 22.12 dan MLP 22.49, selisih hanya 0.37 dan tidak signifikan secara statistik setelah koreksi Nadeau-Bengio (p = 0.745). Untuk target lama rawat inap, XGBoost mencapai RMSE 1.4995 dan MLP 1.5308, selisih 0.031 dan juga tidak signifikan (p = 0.673). Insight utama: perbedaan performa antara model deep learning (MLP) dan XGBoost pada kedua target secara statistik tidak bermakna, sehingga klaim bahwa satu model 'lebih akurat' dari yang lain tidak dapat didukung data pada ukuran sampel ini.",
+    "metadata": {
+      "category": "benchmark_model",
+      "pilar": "pilar_5"
+    }
+  },
+  {
+    "id": "pilar5_justifikasi_pemilihan_model",
+    "title": "Pilar 5 - Mengapa XGBoost Tetap Dipilih",
+    "content": "Meskipun selisih RMSE antara MLP dan XGBoost tidak signifikan secara statistik untuk kedua target (waktu respons rujukan dan lama rawat inap), XGBoost tetap dipilih sebagai model utama bukan karena akurasi yang lebih tinggi, melainkan karena interpretabilitas SHAP yang tidak dimiliki MLP dalam konteks proyek ini. Kemampuan menjelaskan kontribusi tiap fitur secara individual sangat penting bagi pengambil kebijakan rumah sakit yang perlu memahami variabel mana yang harus diprioritaskan. Insight utama: pemilihan model machine learning tidak selalu soal mengejar akurasi tertinggi, terutama ketika perbedaan akurasi tidak signifikan; interpretabilitas untuk kebutuhan pengambilan keputusan bisnis bisa menjadi pertimbangan yang lebih menentukan.",
+    "metadata": {
+      "category": "benchmark_model",
+      "pilar": "pilar_5"
+    }
+  }
+]

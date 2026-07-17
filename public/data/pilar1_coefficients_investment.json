@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Kunjungan Telemedicine/Bulan",
+    "value": 0.098,
+    "significant": true,
+    "p_value": 0.0
+  },
+  {
+    "name": "Anggaran IT Tahunan (juta Rp)",
+    "value": 0.171,
+    "significant": true,
+    "p_value": 0.0
+  },
+  {
+    "name": "Jumlah Perangkat IoT",
+    "value": 0.241,
+    "significant": true,
+    "p_value": 0.0
+  },
+  {
+    "name": "Jumlah Staf IT",
+    "value": 1.169,
+    "significant": true,
+    "p_value": 0.0
+  }
+]

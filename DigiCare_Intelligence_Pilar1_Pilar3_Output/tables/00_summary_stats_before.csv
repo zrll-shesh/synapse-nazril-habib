@@ -1,0 +1,8 @@
+,mean,std,min,max
+skor_kematangan_digital,57.02,18.93,7.3,99.0
+anggaran_it_tahunan_juta_rupiah,120.27,43.7,5.0,233.4
+jumlah_staf_it,4.27,2.3,0.0,12.0
+jumlah_perangkat_iot,33.19,17.41,0.0,81.0
+kunjungan_telemedicine_per_bulan,137.6,70.2,0.0,323.0
+rata_rata_waktu_respons_rujukan_menit,45.65,21.37,0.0,111.2
+rata_rata_lama_rawat_hari,4.17,1.38,-2.0,8.7

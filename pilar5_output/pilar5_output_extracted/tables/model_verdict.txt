@@ -1,0 +1,25 @@
+MODEL VERDICT - PILAR 5: BENCHMARK MLP vs XGBoost
+============================================================
+
+Target: Waktu Respons Rujukan
+  XGBoost RMSE     : 22.1199 +/- 1.472
+  MLP RMSE         : 22.4934 +/- 2.0115
+  Selisih (MLP-XGB): 0.3735
+  p naif (Wilcoxon): 0.2954728 -- TIDAK VALID
+  p Nadeau-Bengio  : 0.7454 -- VALID
+  Cohen d (fold)   : 0.1697 -- konsistensi arah
+  Signifikan (NB)  : TIDAK
+
+Target: Rata-rata Lama Rawat (LOS)
+  XGBoost RMSE     : 1.4995 +/- 0.1383
+  MLP RMSE         : 1.5308 +/- 0.1429
+  Selisih (MLP-XGB): 0.0314
+  p naif (Wilcoxon): 0.1255635 -- TIDAK VALID
+  p Nadeau-Bengio  : 0.6725 -- VALID
+  Cohen d (fold)   : 0.221 -- konsistensi arah
+  Signifikan (NB)  : TIDAK
+
+KESIMPULAN: Selisih RMSE kecil (praktis tidak bermakna klinis) dan
+TIDAK SIGNIFIKAN setelah koreksi Nadeau-Bengio untuk kedua target.
+XGBoost dipilih bukan karena akurasi lebih tinggi secara statistik,
+melainkan karena interpretabilitas SHAP yang tidak dimiliki MLP.

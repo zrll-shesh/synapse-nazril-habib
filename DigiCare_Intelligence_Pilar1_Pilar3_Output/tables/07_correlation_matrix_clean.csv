@@ -1,0 +1,9 @@
+,skor_kematangan_digital,anggaran_it_tahunan_juta_rupiah,jumlah_staf_it,jumlah_perangkat_iot,kunjungan_telemedicine_per_bulan,rata_rata_waktu_respons_rujukan_menit,rata_rata_lama_rawat_hari,tingkat_keterisian_tempat_tidur_persen
+skor_kematangan_digital,1.0,0.81,0.51,0.65,0.78,-0.32,-0.11,0.03
+anggaran_it_tahunan_juta_rupiah,0.81,1.0,0.42,0.55,0.66,-0.28,-0.13,0.04
+jumlah_staf_it,0.51,0.42,1.0,0.29,0.39,-0.16,-0.08,0.05
+jumlah_perangkat_iot,0.65,0.55,0.29,1.0,0.49,-0.18,0.01,0.05
+kunjungan_telemedicine_per_bulan,0.78,0.66,0.39,0.49,1.0,-0.26,-0.08,0.06
+rata_rata_waktu_respons_rujukan_menit,-0.32,-0.28,-0.16,-0.18,-0.26,1.0,0.03,-0.05
+rata_rata_lama_rawat_hari,-0.11,-0.13,-0.08,0.01,-0.08,0.03,1.0,0.04
+tingkat_keterisian_tempat_tidur_persen,0.03,0.04,0.05,0.05,0.06,-0.05,0.04,1.0

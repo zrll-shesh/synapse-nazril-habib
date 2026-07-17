@@ -1,0 +1,22 @@
+[
+  {
+    "feature":"const",
+    "VIF":9.5588392729
+  },
+  {
+    "feature":"anggaran_it_tahunan_juta_rupiah",
+    "VIF":2.1015060096
+  },
+  {
+    "feature":"jumlah_staf_it",
+    "VIF":1.2579427731
+  },
+  {
+    "feature":"jumlah_perangkat_iot",
+    "VIF":1.4942131054
+  },
+  {
+    "feature":"kunjungan_telemedicine_per_bulan",
+    "VIF":1.8954616765
+  }
+]

@@ -1,0 +1,6 @@
+features,scaler,pca,evr,method,k,silhouette,calinski,davies_bouldin,bic,min_size
+"skor_kematangan_digital,beban_pasien_per_staf,efisiensi_anggaran_it,rasio_adopsi_telemedicine",robust,pca2,0.7635182835714349,GMM-full,3,0.47456166369522246,62.55264447661032,1.8855575283057915,1612.140519143982,23
+"tingkat_keterisian_tempat_tidur_persen,beban_pasien_per_staf,efisiensi_anggaran_it,rasio_adopsi_telemedicine",robust,pca2,0.7287394342040144,GMM-full,3,0.4721868630924884,63.47127057339205,1.699987617855907,1559.028551859007,24
+"rata_rata_waktu_respons_rujukan_menit,beban_pasien_per_staf,efisiensi_anggaran_it,rasio_adopsi_telemedicine",robust,pca2,0.7317681555584503,GMM-full,3,0.4684337128710453,63.64683872138274,1.765593028196287,1612.1442754616173,24
+"efisiensi_anggaran_it,rasio_adopsi_telemedicine",standard,none,,GMM-full,3,0.46822559608947173,73.36033235080836,1.6991914910318595,1403.5596294699433,23
+"skor_kematangan_digital,efisiensi_anggaran_it,rasio_adopsi_telemedicine",robust,pca2,0.8655094149910896,GMM-full,3,0.4661178545613149,67.08584905028849,1.6990286194006838,1587.5191241803893,22
