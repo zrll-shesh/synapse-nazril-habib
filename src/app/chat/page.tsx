@@ -50,7 +50,7 @@ export default function ChatPage() {
         {
           role: "assistant",
           content:
-            "Maaf, terjadi kendala menghubungi asisten RAG. Pastikan API key dan chroma_store sudah dikonfigurasi dengan benar (lihat README).",
+            "Maaf, terjadi kendala menghubungi asisten RAG. Pastikan GEMINI_API_KEY sudah dikonfigurasi dengan benar dan rag_corpus/embeddings.json sudah di-generate (lihat README).",
         },
       ]);
     } finally {
@@ -64,7 +64,7 @@ export default function ChatPage() {
       <SectionHeader
         eyebrow="RAG Assistant"
         title="Tanya DigiCare"
-        description="Dijawab berbasis ChromaDB + embedding all-MiniLM-L6-v2 atas dokumen insight Pilar 1-5, digenerasi oleh Gemini 2.5 Flash Lite."
+        description="Dijawab berbasis embedding dan Gemini 2.5 Flash Lite atas dokumen insight Pilar 1-5."
       />
 
       <div ref={scrollRef} className="flex-1 overflow-y-auto space-y-4 pr-1 mb-4">

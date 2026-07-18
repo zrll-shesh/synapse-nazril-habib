@@ -76,7 +76,7 @@ export default function Sidebar() {
           276 rumah sakit &middot; 35 provinsi
         </p>
         <p className="font-mono text-[0.65rem] text-ink-soft/60 mt-1">
-          Data Analyst Competition 2026
+          Data Analyst Competition 2026 (by Nazril and Habib)
         </p>
       </div>
     </aside>
