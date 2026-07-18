@@ -5,6 +5,7 @@ import DataTable from "@/components/DataTable";
 import ComparisonBarChart from "@/components/charts/ComparisonBarChart";
 import statTests from "@/data/pilar5_statistical_tests.json";
 import tuning from "@/data/pilar5_tuning_summary.json";
+import benchmarkSummary from "@/data/pilar5_benchmark_summary.json";
 
 export default function Pilar5Page() {
   const chartData = (statTests as any[]).map((t) => ({
@@ -16,7 +17,7 @@ export default function Pilar5Page() {
   return (
     <div>
       <SectionHeader
-        eyebrow="Pilar 05  Benchmark Model"
+        eyebrow="Pilar 05 — Benchmark Model"
         title="MLP vs XGBoost: perbedaan yang tidak signifikan, tapi tetap bermakna"
         description="Benchmark diuji dengan koreksi Nadeau-Bengio yang valid untuk hasil cross-validation, bukan uji Wilcoxon naif yang lazim disalahgunakan."
       />
@@ -45,7 +46,7 @@ export default function Pilar5Page() {
       <section className="mb-12">
         <p className="eyebrow mb-3">Uji Statistik: Nadeau-Bengio vs Wilcoxon Naif</p>
         <DataTable
-          columns={["Target", "RMSE MLP", "RMSE XGB", "Selisih", "p Wilcoxon (invalid)", "p Nadeau-Bengio", "Signifikan"]}
+          columns={["Target", "RMSE MLP", "RMSE XGB", "Selisih", "p Wilcoxon (invalid)", "p Nadeau-Bengio", "Cohen's d", "Signifikan"]}
           rows={(statTests as any[]).map((t) => [
             t.Target,
             t.MLP_RMSE_mean,
@@ -53,6 +54,7 @@ export default function Pilar5Page() {
             t.Diff_mean_MLP_minus_XGB,
             t.Wilcoxon_p_NAIF_jangan_pakai.toFixed(4),
             t.NB_p_corrected,
+            t.Cohen_d_fold_consistency,
             t.Signifikan_NB ? "Ya" : "Tidak",
           ])}
           caption="Uji Wilcoxon naif tidak valid untuk hasil cross-validation karena mengabaikan korelasi antar fold"
@@ -61,6 +63,26 @@ export default function Pilar5Page() {
           Selisih RMSE antara MLP dan XGBoost pada kedua target secara statistik tidak bermakna
           (p = 0.745 dan p = 0.673 setelah koreksi Nadeau-Bengio). Klaim bahwa satu model &ldquo;lebih
           akurat&rdquo; dari yang lain tidak dapat didukung data pada ukuran sampel ini.
+        </InsightCallout>
+      </section>
+
+      <section className="mb-12">
+        <p className="eyebrow mb-3">R² pada Cross-Validation (Out-of-Sample)</p>
+        <DataTable
+          columns={["Model", "R² Target A (Respons)", "R² Target B (LOS)"]}
+          rows={(benchmarkSummary as any[]).map((b) => [
+            b.Model,
+            b.TargetA_R2_mean,
+            b.TargetB_R2_mean,
+          ])}
+          caption="R² negatif berarti model out-of-sample lebih buruk dibanding sekadar menebak rata-rata"
+        />
+        <InsightCallout tone="amber">
+          R² cross-validation kedua model negatif untuk kedua target (XGBoost: -0.14 dan -0.32; MLP:
+          -0.18 dan -0.38). Ini menunjukkan waktu respons rujukan dan LOS memang sulit diprediksi
+          dari fitur struktural dan digital yang tersedia — konsisten dengan temuan Pilar 2 bahwa R²
+          in-sample OLS juga rendah (0.20 dan 0.10). Kejujuran ini penting: model bukan untuk
+          prediksi presisi tinggi, melainkan untuk memahami arah dan kekuatan asosiasi antar variabel.
         </InsightCallout>
       </section>
 
@@ -77,7 +99,7 @@ export default function Pilar5Page() {
         <InsightCallout tone="amber">
           Meskipun perbedaan akurasi tidak signifikan, XGBoost tetap dipilih sebagai model utama
           bukan karena akurasi lebih tinggi, melainkan karena kemampuan SHAP menjelaskan kontribusi
-          tiap fitur secara individual  sesuatu yang tidak dimiliki MLP dalam konteks proyek ini.
+          tiap fitur secara individual — sesuatu yang tidak dimiliki MLP dalam konteks proyek ini.
           Pemilihan model tidak selalu soal mengejar akurasi tertinggi, terutama ketika perbedaannya
           tidak signifikan; interpretabilitas untuk kebutuhan pengambilan keputusan bisnis bisa jadi
           pertimbangan yang lebih menentukan.

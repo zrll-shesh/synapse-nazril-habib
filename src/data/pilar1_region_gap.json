@@ -1,12 +1,32 @@
 [
   {
-    "kawasan":"Barat_Tengah",
-    "skor_kematangan_digital":59.58,
-    "rata_rata_waktu_respons_rujukan_menit":43.88
+    "region":"Jawa",
+    "skor_kematangan_digital":76.35,
+    "rata_rata_waktu_respons_rujukan_menit":39.01
   },
   {
-    "kawasan":"Timur",
-    "skor_kematangan_digital":47.99,
-    "rata_rata_waktu_respons_rujukan_menit":52.68
+    "region":"Sumatera",
+    "skor_kematangan_digital":61.18,
+    "rata_rata_waktu_respons_rujukan_menit":41.35
+  },
+  {
+    "region":"Kalimantan",
+    "skor_kematangan_digital":53.76,
+    "rata_rata_waktu_respons_rujukan_menit":46.78
+  },
+  {
+    "region":"Bali & Nusa Tenggara",
+    "skor_kematangan_digital":52.77,
+    "rata_rata_waktu_respons_rujukan_menit":48.22
+  },
+  {
+    "region":"Sulawesi",
+    "skor_kematangan_digital":48.03,
+    "rata_rata_waktu_respons_rujukan_menit":49.32
+  },
+  {
+    "region":"Maluku & Papua",
+    "skor_kematangan_digital":44.67,
+    "rata_rata_waktu_respons_rujukan_menit":55.78
   }
 ]

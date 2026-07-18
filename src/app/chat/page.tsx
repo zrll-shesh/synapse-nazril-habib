@@ -18,7 +18,7 @@ export default function ChatPage() {
     {
       role: "assistant",
       content:
-        "Halo, saya asisten DigiCare Intelligence. Tanyakan apa saja tentang temuan lima pilar analisis  jawaban saya didasarkan pada dokumen insight asli, bukan tebakan.",
+        "Halo, saya asisten DigiCare Intelligence. Tanyakan apa saja tentang temuan lima pilar analisis — jawaban saya didasarkan pada dokumen insight asli, bukan tebakan.",
     },
   ]);
   const [input, setInput] = useState("");

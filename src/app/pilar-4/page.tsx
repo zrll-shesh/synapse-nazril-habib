@@ -37,9 +37,9 @@ export default function Pilar4Page() {
   return (
     <div>
       <SectionHeader
-        eyebrow="Pilar 04  Sistem Peringatan Dini Risiko"
+        eyebrow="Pilar 04 — Sistem Peringatan Dini Risiko"
         title="Mendeteksi rumah sakit berisiko sebelum data operasional tersedia"
-        description="Model klasifikasi dibangun murni dari profil struktural rumah sakit  tanpa skor digital maupun variabel operasional  untuk menghindari kebocoran informasi."
+        description="Model klasifikasi dibangun murni dari profil struktural rumah sakit — tanpa skor digital maupun variabel operasional — untuk menghindari kebocoran informasi."
       />
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
@@ -73,7 +73,7 @@ export default function Pilar4Page() {
         <InsightCallout tone="coral">
           Recall 16% berarti sebagian besar rumah sakit bermasalah masih bisa terlewatkan (false
           negative). Model ini direkomendasikan sebagai <strong>lapisan pertama peringatan dini</strong>{" "}
-          untuk memprioritaskan audit  bukan pengganti audit langsung atau alat keputusan tunggal.
+          untuk memprioritaskan audit — bukan pengganti audit langsung atau alat keputusan tunggal.
         </InsightCallout>
       </section>
     </div>

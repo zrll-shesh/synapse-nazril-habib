@@ -1,3 +1,0 @@
-Pilar 1 - Status SatuSehat vs Efisiensi Operasional
-
-Rumah sakit yang sudah terhubung SatuSehat memiliki rata-rata waktu respons rujukan 45.86 menit, sedangkan yang belum terhubung rata-rata 45.64 menit, selisih hanya 0.218 menit. Uji t menunjukkan perbedaan ini tidak signifikan secara statistik (p = 0.953). Insight utama: status koneksi SatuSehat saat ini lebih tepat dibaca sebagai penanda kepatuhan administratif terhadap regulasi, bukan sebagai indikator efisiensi operasional riil. Rumah sakit tidak boleh menganggap koneksi SatuSehat sebagai bukti transformasi digital yang sudah berdampak pada layanan pasien.

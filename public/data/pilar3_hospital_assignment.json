@@ -122,7 +122,7 @@
   {
     "nama_rumah_sakit":"RS Karya Insani 6",
     "provinsi":"Bali",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"D",
     "kepemilikan":"Pemerintah Pusat",
     "skor_kematangan_digital":75.4,
@@ -437,7 +437,7 @@
   {
     "nama_rumah_sakit":"RS Husada Mulia 1",
     "provinsi":"Bali",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":96.5,
@@ -497,7 +497,7 @@
   {
     "nama_rumah_sakit":"RS Sejahtera 7",
     "provinsi":"Bali",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":89.2,
@@ -602,7 +602,7 @@
   {
     "nama_rumah_sakit":"RS Citra Medika 4",
     "provinsi":"Bali",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Tni\/Polri",
     "skor_kematangan_digital":86.0,
@@ -647,7 +647,7 @@
   {
     "nama_rumah_sakit":"RS Permata Bunda 3",
     "provinsi":"Bali",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Tni\/Polri",
     "skor_kematangan_digital":85.1,
@@ -692,7 +692,7 @@
   {
     "nama_rumah_sakit":"RSUD Citra Medika 2",
     "provinsi":"Bali",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"D",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":84.4,
@@ -737,7 +737,7 @@
   {
     "nama_rumah_sakit":"RS Bhakti Husada 5",
     "provinsi":"Bali",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Tni\/Polri",
     "skor_kematangan_digital":82.4,
@@ -1247,7 +1247,7 @@
   {
     "nama_rumah_sakit":"RS Sejahtera 2",
     "provinsi":"Maluku",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":70.2,
@@ -1262,7 +1262,7 @@
   {
     "nama_rumah_sakit":"RS Sejahtera 2",
     "provinsi":"Maluku",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":70.2,
@@ -1292,7 +1292,7 @@
   {
     "nama_rumah_sakit":"RS Cahaya Medika 6",
     "provinsi":"Maluku",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Tni\/Polri",
     "skor_kematangan_digital":69.4,
@@ -1412,7 +1412,7 @@
   {
     "nama_rumah_sakit":"RS Citra Medika 3",
     "provinsi":"Nusa Tenggara Timur",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":68.4,
@@ -1427,7 +1427,7 @@
   {
     "nama_rumah_sakit":"RS Medika Utama 3",
     "provinsi":"Maluku Utara",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"D",
     "kepemilikan":"Pemerintah Pusat",
     "skor_kematangan_digital":68.4,
@@ -1862,7 +1862,7 @@
   {
     "nama_rumah_sakit":"RSUD Husada Mulia 9",
     "provinsi":"Nusa Tenggara Timur",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":62.5,
@@ -1982,7 +1982,7 @@
   {
     "nama_rumah_sakit":"RS Sejahtera 7",
     "provinsi":"Maluku",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":60.2,
@@ -2072,7 +2072,7 @@
   {
     "nama_rumah_sakit":"RSUD Husada Mulia 1",
     "provinsi":"Nusa Tenggara Barat",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"A",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":59.2,
@@ -2087,7 +2087,7 @@
   {
     "nama_rumah_sakit":"RSUD Husada Mulia 1",
     "provinsi":"Nusa Tenggara Barat",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"A",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":59.2,
@@ -2132,7 +2132,7 @@
   {
     "nama_rumah_sakit":"RS Graha Sehat 5",
     "provinsi":"Papua",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":58.6,
@@ -2162,7 +2162,7 @@
   {
     "nama_rumah_sakit":"RS Bunda Kasih 7",
     "provinsi":"Papua Barat",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"A",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":58.2,
@@ -2192,7 +2192,7 @@
   {
     "nama_rumah_sakit":"RS Husada Mulia 2",
     "provinsi":"Papua Barat",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"D",
     "kepemilikan":"Tni\/Polri",
     "skor_kematangan_digital":57.9,
@@ -2222,7 +2222,7 @@
   {
     "nama_rumah_sakit":"RS Husada Mulia 1",
     "provinsi":"Papua",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":57.5,
@@ -2252,7 +2252,7 @@
   {
     "nama_rumah_sakit":"RSUD Husada Mulia 6",
     "provinsi":"Nusa Tenggara Barat",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":57.1,
@@ -2402,7 +2402,7 @@
   {
     "nama_rumah_sakit":"RS Sentosa Medika 4",
     "provinsi":"Papua Barat",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":54.2,
@@ -2417,7 +2417,7 @@
   {
     "nama_rumah_sakit":"RSUD Sejahtera 4",
     "provinsi":"Nusa Tenggara Timur",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":54.1,
@@ -2612,7 +2612,7 @@
   {
     "nama_rumah_sakit":"RS Bhakti Husada 1",
     "provinsi":"Papua Tengah",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":52.0,
@@ -2627,7 +2627,7 @@
   {
     "nama_rumah_sakit":"RS Sejahtera 2",
     "provinsi":"Maluku Utara",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":51.8,
@@ -2672,7 +2672,7 @@
   {
     "nama_rumah_sakit":"RS Bhakti Husada 1",
     "provinsi":"Maluku",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Pemerintah Pusat",
     "skor_kematangan_digital":51.0,
@@ -2747,7 +2747,7 @@
   {
     "nama_rumah_sakit":"RS Husada Mulia 4",
     "provinsi":"Papua",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":49.9,
@@ -2777,7 +2777,7 @@
   {
     "nama_rumah_sakit":"RS Cahaya Medika 4",
     "provinsi":"Maluku",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"D",
     "kepemilikan":"Pemerintah Pusat",
     "skor_kematangan_digital":49.8,
@@ -2942,7 +2942,7 @@
   {
     "nama_rumah_sakit":"RSUD Graha Sehat 5",
     "provinsi":"Papua Tengah",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":46.9,
@@ -2957,7 +2957,7 @@
   {
     "nama_rumah_sakit":"RSUD Cahaya Medika 7",
     "provinsi":"Papua",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"D",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":46.7,
@@ -2987,7 +2987,7 @@
   {
     "nama_rumah_sakit":"RS Bhakti Husada 3",
     "provinsi":"Papua",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":46.4,
@@ -3032,7 +3032,7 @@
   {
     "nama_rumah_sakit":"RSUD Harapan Bangsa 7",
     "provinsi":"Nusa Tenggara Timur",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":46.3,
@@ -3077,7 +3077,7 @@
   {
     "nama_rumah_sakit":"RS Citra Medika 2",
     "provinsi":"Papua",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"A",
     "kepemilikan":"Tni\/Polri",
     "skor_kematangan_digital":44.6,
@@ -3137,7 +3137,7 @@
   {
     "nama_rumah_sakit":"RS Karya Insani 8",
     "provinsi":"Nusa Tenggara Barat",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":43.9,
@@ -3167,7 +3167,7 @@
   {
     "nama_rumah_sakit":"RS Permata Bunda 1",
     "provinsi":"Papua Barat",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"A",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":43.6,
@@ -3242,7 +3242,7 @@
   {
     "nama_rumah_sakit":"RS Harapan Bangsa 5",
     "provinsi":"Nusa Tenggara Barat",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Bumn",
     "skor_kematangan_digital":43.2,
@@ -3317,7 +3317,7 @@
   {
     "nama_rumah_sakit":"RS Graha Sehat 2",
     "provinsi":"Papua Tengah",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Tni\/Polri",
     "skor_kematangan_digital":42.8,
@@ -3467,7 +3467,7 @@
   {
     "nama_rumah_sakit":"RSUD Karya Insani 5",
     "provinsi":"Maluku",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":38.1,
@@ -3482,7 +3482,7 @@
   {
     "nama_rumah_sakit":"RS Bunda Kasih 1",
     "provinsi":"Maluku Utara",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":37.8,
@@ -3512,7 +3512,7 @@
   {
     "nama_rumah_sakit":"RS Harapan Bangsa 6",
     "provinsi":"Papua Barat",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":37.5,
@@ -3542,7 +3542,7 @@
   {
     "nama_rumah_sakit":"RS Cahaya Medika 5",
     "provinsi":"Maluku Utara",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"D",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":36.5,
@@ -3557,7 +3557,7 @@
   {
     "nama_rumah_sakit":"RSUD Medika Utama 5",
     "provinsi":"Papua Barat",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":36.4,
@@ -3572,7 +3572,7 @@
   {
     "nama_rumah_sakit":"RS Bhakti Husada 8",
     "provinsi":"Papua",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"D",
     "kepemilikan":"Bumn",
     "skor_kematangan_digital":36.3,
@@ -3602,7 +3602,7 @@
   {
     "nama_rumah_sakit":"RS Harapan Bangsa 4",
     "provinsi":"Nusa Tenggara Barat",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"D",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":35.4,
@@ -3632,7 +3632,7 @@
   {
     "nama_rumah_sakit":"RS Sentosa Medika 5",
     "provinsi":"Nusa Tenggara Timur",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"D",
     "kepemilikan":"Pemerintah Pusat",
     "skor_kematangan_digital":35.1,
@@ -3662,7 +3662,7 @@
   {
     "nama_rumah_sakit":"RS Harapan Bangsa 4",
     "provinsi":"Papua Tengah",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"D",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":32.7,
@@ -3677,7 +3677,7 @@
   {
     "nama_rumah_sakit":"RSUD Sejahtera 6",
     "provinsi":"Papua",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":32.1,
@@ -3692,7 +3692,7 @@
   {
     "nama_rumah_sakit":"RS Graha Sehat 3",
     "provinsi":"Papua Tengah",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":31.9,
@@ -3707,7 +3707,7 @@
   {
     "nama_rumah_sakit":"RS Bhakti Husada 2",
     "provinsi":"Nusa Tenggara Timur",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":31.3,
@@ -3722,7 +3722,7 @@
   {
     "nama_rumah_sakit":"RSUD Permata Bunda 1",
     "provinsi":"Nusa Tenggara Timur",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"B",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":31.2,
@@ -3782,7 +3782,7 @@
   {
     "nama_rumah_sakit":"RS Cahaya Medika 6",
     "provinsi":"Maluku Utara",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":29.3,
@@ -3797,7 +3797,7 @@
   {
     "nama_rumah_sakit":"RS Husada Mulia 6",
     "provinsi":"Papua Tengah",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":28.3,
@@ -3827,7 +3827,7 @@
   {
     "nama_rumah_sakit":"RS Citra Medika 4",
     "provinsi":"Maluku Utara",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":28.1,
@@ -3842,7 +3842,7 @@
   {
     "nama_rumah_sakit":"RSUD Sejahtera 8",
     "provinsi":"Papua Barat",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":27.9,
@@ -3917,7 +3917,7 @@
   {
     "nama_rumah_sakit":"RS Karya Insani 3",
     "provinsi":"Nusa Tenggara Barat",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":23.2,
@@ -3947,7 +3947,7 @@
   {
     "nama_rumah_sakit":"RSUD Karya Insani 8",
     "provinsi":"Nusa Tenggara Timur",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":21.4,
@@ -3962,7 +3962,7 @@
   {
     "nama_rumah_sakit":"RS Permata Bunda 2",
     "provinsi":"Nusa Tenggara Barat",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Pemerintah Pusat",
     "skor_kematangan_digital":20.1,
@@ -3992,7 +3992,7 @@
   {
     "nama_rumah_sakit":"RS Permata Bunda 6",
     "provinsi":"Nusa Tenggara Timur",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":19.6,
@@ -4082,7 +4082,7 @@
   {
     "nama_rumah_sakit":"RSUD Karya Insani 3",
     "provinsi":"Maluku",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"C",
     "kepemilikan":"Pemerintah Daerah",
     "skor_kematangan_digital":12.5,
@@ -4097,7 +4097,7 @@
   {
     "nama_rumah_sakit":"RS Husada Mulia 3",
     "provinsi":"Papua Barat",
-    "region":"Indonesia Timur",
+    "region":"Maluku & Papua",
     "kelas_rumah_sakit":"D",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":12.5,
@@ -4112,7 +4112,7 @@
   {
     "nama_rumah_sakit":"RS Permata Bunda 7",
     "provinsi":"Nusa Tenggara Barat",
-    "region":"Indonesia Timur",
+    "region":"Bali & Nusa Tenggara",
     "kelas_rumah_sakit":"D",
     "kepemilikan":"Swasta",
     "skor_kematangan_digital":9.0,

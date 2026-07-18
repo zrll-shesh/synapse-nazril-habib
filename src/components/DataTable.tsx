@@ -7,7 +7,7 @@ type DataTableProps = {
 
 export default function DataTable({ columns, rows, caption, maxHeight }: DataTableProps) {
   return (
-    <div className="bg-paper-card border border-line rounded-lg overflow-hidden">
+    <div className="card-surface overflow-hidden">
       {caption && (
         <div className="px-4 py-2.5 border-b border-line">
           <p className="eyebrow">{caption}</p>

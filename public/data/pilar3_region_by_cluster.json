@@ -1,17 +1,19 @@
 [
   {
     "cluster":0,
-    "Indonesia Timur":1,
+    "Bali & Nusa Tenggara":1,
     "Jawa":11,
     "Kalimantan":4,
+    "Maluku & Papua":0,
     "Sulawesi":2,
     "Sumatera":8
   },
   {
     "cluster":1,
-    "Indonesia Timur":60,
+    "Bali & Nusa Tenggara":24,
     "Jawa":32,
     "Kalimantan":40,
+    "Maluku & Papua":36,
     "Sulawesi":49,
     "Sumatera":69
   }

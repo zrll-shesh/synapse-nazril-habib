@@ -6,35 +6,35 @@ import headline from "@/data/headline_stats.json";
 const PILAR_CARDS = [
   {
     href: "/pilar-1",
-    tab: "Pilar 01",
+    tab: "01",
     title: "Audit Kematangan Digital",
     desc: "Model struktural vs investasi menjawab: apa yang benar-benar membentuk skor digital rumah sakit?",
     stat: `R² struktural ${headline.pilar1.r2_struktural}`,
   },
   {
     href: "/pilar-2",
-    tab: "Pilar 02",
+    tab: "02",
     title: "Dampak Operasional",
     desc: "Digitalisasi mempercepat respons rujukan, tapi tidak memperpendek lama rawat inap.",
     stat: `-3.3 menit / +10 poin skor digital`,
   },
   {
     href: "/pilar-3",
-    tab: "Pilar 03",
+    tab: "03",
     title: "Segmentasi & Bottleneck",
     desc: "Klaster Digital Frontier tidak pernah mengalami inefisiensi ganda satu pun.",
     stat: `Silhouette ${headline.pilar3.silhouette}`,
   },
   {
     href: "/pilar-4",
-    tab: "Pilar 04",
+    tab: "04",
     title: "Prediksi Risiko",
     desc: "Sinyal struktural mendeteksi rumah sakit berisiko sebelum data operasional tersedia.",
     stat: `ROC-AUC ${headline.pilar4.roc_auc}`,
   },
   {
     href: "/pilar-5",
-    tab: "Pilar 05",
+    tab: "05",
     title: "Benchmark Model",
     desc: "MLP vs XGBoost diuji dengan koreksi Nadeau-Bengio, bukan uji naif yang menyesatkan.",
     stat: `Selisih RMSE tidak signifikan`,
@@ -55,9 +55,12 @@ export default function HomePage() {
           <span className="text-coral font-medium">inefisiensi ganda</span>.
         </p>
 
-        <div className="mt-10 border border-line rounded-lg bg-paper-card px-6 py-5">
+        <div className="texture-panel mt-10 border border-line rounded-lg px-6 py-5 shadow-[0_1px_2px_rgba(22,33,29,0.04)]">
           <div className="flex items-center justify-between mb-1">
-            <p className="eyebrow">Denyut Populasi &middot; 276 Rumah Sakit</p>
+            <p className="eyebrow flex items-center gap-2">
+              <span className="pulse-dot" />
+              Denyut Populasi &middot; 276 Rumah Sakit
+            </p>
             <p className="font-mono text-xs text-ink-soft">
               {headline.pilar3.flag_rate_overall}% ter-flag inefisiensi ganda
             </p>
@@ -69,7 +72,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-14">
+      <section className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-14 stagger-children">
         <StatCard
           label="Rumah Sakit Dianalisis"
           value={String(headline.jumlah_rumah_sakit)}
@@ -92,36 +95,35 @@ export default function HomePage() {
           label="ROC-AUC Model Risiko"
           value={String(headline.pilar4.roc_auc)}
           tone="warning"
-          note="Recall 16%  lapisan pertama, bukan final"
+          note="Recall 16% — lapisan pertama, bukan final"
         />
       </section>
 
       <section>
         <p className="eyebrow mb-4">Lima Pilar Analisis</p>
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-4 stagger-children">
           {PILAR_CARDS.map((p) => (
             <Link
               key={p.href}
               href={p.href}
-              className="focus-ring group border border-line bg-paper-card rounded-lg p-6 hover:border-teal transition-colors"
+              className="card-surface card-surface-interactive focus-ring group relative overflow-hidden p-6"
             >
-              <div className="flex items-center justify-between mb-3">
-                <span className="font-mono text-[0.7rem] tracking-widest text-ink-soft/60">
-                  {p.tab}
-                </span>
-                <span className="font-mono text-[0.7rem] text-teal opacity-0 group-hover:opacity-100 transition-opacity">
-                  BUKA &rarr;
+              <div className="flex items-center justify-between mb-4">
+                <span className="pillar-badge">{p.tab}</span>
+                <span className="font-mono text-[0.7rem] text-teal opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                  BUKA <span className="transition-transform group-hover:translate-x-0.5">&rarr;</span>
                 </span>
               </div>
               <h2 className="font-display text-lg font-semibold mb-2">{p.title}</h2>
               <p className="font-body text-sm text-ink-soft leading-relaxed mb-3">{p.desc}</p>
-              <p className="font-mono text-xs text-teal-deep">{p.stat}</p>
+              <p className="font-mono text-xs text-teal-deep border-t border-line pt-3">{p.stat}</p>
             </Link>
           ))}
           <Link
             href="/chat"
-            className="focus-ring group border border-teal bg-teal-soft rounded-lg p-6 flex flex-col justify-center items-start"
+            className="card-surface card-surface-interactive focus-ring group relative overflow-hidden p-6 flex flex-col justify-center items-start !border-teal bg-teal-soft"
           >
+            <span className="absolute left-0 top-0 h-full w-[3px] bg-teal" />
             <span className="font-mono text-[0.7rem] tracking-widest text-teal-deep/70 mb-3">
               RAG ASSISTANT
             </span>

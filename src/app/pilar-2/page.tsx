@@ -4,10 +4,12 @@ import InsightCallout from "@/components/InsightCallout";
 import DataTable from "@/components/DataTable";
 import HorizontalBarChart from "@/components/charts/HorizontalBarChart";
 import koefA from "@/data/pilar2_koef_targetA.json";
+import koefB from "@/data/pilar2_koef_targetB.json";
 import shapA from "@/data/pilar2_shap_targetA.json";
 import shapB from "@/data/pilar2_shap_targetB.json";
 import metrics from "@/data/pilar2_metrics_comparison.json";
 import highlights from "@/data/pilar2_highlights.json";
+import vif from "@/data/pilar2_vif_targetA.json";
 
 const LABELS: Record<string, string> = {
   jumlah_tempat_tidur: "Jumlah Tempat Tidur",
@@ -30,7 +32,17 @@ export default function Pilar2Page() {
     .map((d) => ({ name: LABELS[d.Feature] ?? d.Feature, value: d.Coefficient, significant: d.Sig_p05 }))
     .sort((a, b) => a.value - b.value);
 
+  const coefChartB = (koefB as any[])
+    .filter((d) => d.Feature !== "const" && !d.Feature.startsWith("kelas_") && !d.Feature.startsWith("kepemilikan_") && !d.Feature.startsWith("region_"))
+    .map((d) => ({ name: LABELS[d.Feature] ?? d.Feature, value: d.Coefficient, significant: d.Sig_p05 }))
+    .sort((a, b) => a.value - b.value);
+
   const shapChartA = (shapA as any[])
+    .slice(0, 8)
+    .map((d) => ({ name: LABELS[d.Feature] ?? d.Feature, value: d.MeanAbsSHAP, significant: true }))
+    .sort((a, b) => a.value - b.value);
+
+  const shapChartB = (shapB as any[])
     .slice(0, 8)
     .map((d) => ({ name: LABELS[d.Feature] ?? d.Feature, value: d.MeanAbsSHAP, significant: true }))
     .sort((a, b) => a.value - b.value);
@@ -38,7 +50,7 @@ export default function Pilar2Page() {
   return (
     <div>
       <SectionHeader
-        eyebrow="Pilar 02  Dampak Operasional"
+        eyebrow="Pilar 02 — Dampak Operasional"
         title="Digitalisasi mempercepat respons, tapi tidak memperpendek rawat inap"
         description="Dua target diuji terpisah dengan OLS dan XGBoost + SHAP: waktu respons rujukan (Target A) dan lama rawat inap / LOS (Target B)."
       />
@@ -50,7 +62,7 @@ export default function Pilar2Page() {
       </div>
 
       <section className="mb-12">
-        <p className="eyebrow mb-3">6.1 Target A  Waktu Respons Rujukan (OLS)</p>
+        <p className="eyebrow mb-3">6.1 Target A — Waktu Respons Rujukan (OLS)</p>
         <p className="font-body text-ink-soft mb-4 leading-relaxed max-w-2xl">
           Koefisien regresi terhadap waktu respons rujukan (menit). Nilai negatif berarti fitur
           tersebut berasosiasi dengan respons yang lebih cepat.
@@ -64,7 +76,7 @@ export default function Pilar2Page() {
       </section>
 
       <section className="mb-12">
-        <p className="eyebrow mb-3">6.2 Kontribusi Fitur (SHAP)  Target A</p>
+        <p className="eyebrow mb-3">6.2 Kontribusi Fitur (SHAP) — Target A</p>
         <HorizontalBarChart
           data={shapChartA}
           valueLabel="Mean |SHAP|"
@@ -78,13 +90,60 @@ export default function Pilar2Page() {
       </section>
 
       <section className="mb-12">
-        <p className="eyebrow mb-3">6.3 Target B  Lama Rawat Inap (LOS): Klaim Tidak Terbukti</p>
+        <p className="eyebrow mb-3">6.3 Target B — Lama Rawat Inap (LOS): Klaim Tidak Terbukti</p>
+        <p className="font-body text-ink-soft mb-4 leading-relaxed max-w-2xl">
+          Koefisien regresi terhadap lama rawat inap (hari). Ditampilkan penuh, termasuk yang tidak
+          signifikan, untuk transparansi metodologis — bukan hanya variabel yang &ldquo;lolos&rdquo;.
+        </p>
+        <HorizontalBarChart data={coefChartB} valueLabel="Koefisien (hari)" height={420} />
         <InsightCallout tone="coral">
           Berbeda dengan waktu respons, LOS tidak berasosiasi secara statistik dengan variabel
-          digital apa pun setelah multikolinearitas dikoreksi. Digitalisasi berdampak pada{" "}
-          <strong>kecepatan proses layanan</strong>, bukan pada <strong>durasi klinis perawatan</strong>{" "}
-           LOS lebih ditentukan oleh kelas RS, BOR, dan tingkat keparahan penyakit. Ini bukan
-          kelemahan, melainkan kejujuran metodologis yang memperkuat kredibilitas temuan Target A.
+          digital apa pun setelah multikolinearitas dikoreksi (p gap digital = 0.456). Digitalisasi
+          berdampak pada <strong>kecepatan proses layanan</strong>, bukan pada{" "}
+          <strong>durasi klinis perawatan</strong> — LOS lebih ditentukan oleh kelas RS, BOR, dan
+          tingkat keparahan penyakit. Ini bukan kelemahan, melainkan kejujuran metodologis yang
+          memperkuat kredibilitas temuan Target A.
+        </InsightCallout>
+      </section>
+
+      <section className="mb-12">
+        <p className="eyebrow mb-3">6.4 Kontribusi Fitur (SHAP) — Target B</p>
+        <HorizontalBarChart
+          data={shapChartB}
+          valueLabel="Mean |SHAP|"
+          positiveColor="#C88A2E"
+          negativeColor="#C88A2E"
+        />
+        <p className="font-body text-sm text-ink-soft mt-3 max-w-2xl">
+          Menariknya, anggaran IT dan rasio adopsi telemedicine tetap muncul sebagai kontributor
+          teratas secara non-linear pada XGBoost, meski tidak signifikan pada OLS linear — sinyal
+          hubungan yang lemah dan tidak konsisten, memperkuat kesimpulan bahwa LOS tidak benar-benar
+          dijelaskan oleh faktor digital.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <p className="eyebrow mb-3">Diagnostik Multikolinearitas (VIF)</p>
+        <p className="font-body text-ink-soft mb-4 leading-relaxed max-w-2xl">
+          VIF dihitung sekali untuk seluruh prediktor karena strukturnya sama persis di kedua model
+          (Target A dan B hanya berbeda variabel target, bukan variabel penjelas).
+        </p>
+        <DataTable
+          columns={["Fitur", "VIF"]}
+          rows={(vif as any[])
+            .slice()
+            .sort((a, b) => b.VIF - a.VIF)
+            .map((v) => [v.Feature, v.VIF.toFixed(2)])}
+          caption="Beberapa variabel kontrol struktural memiliki VIF jauh di atas ambang 10"
+        />
+        <InsightCallout tone="amber">
+          Berbeda dengan Pilar 1 dan 3, model Pilar 2 memiliki multikolinearitas parah pada beberapa
+          variabel kontrol struktural (jumlah_jenis_layanan VIF=45.4, jumlah_tempat_tidur VIF=38.2,
+          status_implementasi_rme VIF=27.6). Untungnya, variabel utama yang jadi fokus klaim utama —
+          digital_gap_score — memiliki VIF rendah (4.81), sehingga koefisiennya tetap layak
+          diinterpretasikan. Namun koefisien variabel struktural lain pada chart di atas (kapasitas
+          tempat tidur, jumlah layanan, dsb.) sebaiknya dibaca dengan hati-hati dan tidak
+          diinterpretasikan satu per satu secara individual.
         </InsightCallout>
       </section>
 

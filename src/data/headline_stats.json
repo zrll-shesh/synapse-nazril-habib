@@ -2,13 +2,17 @@
   "jumlah_rumah_sakit": 276,
   "jumlah_provinsi": 35,
   "pilar1": {
-    "r2_struktural": 0.423,
+    "r2_struktural": 0.43,
     "r2_investasi": 0.811,
-    "vif_max_struktural": 6.76,
-    "gap_digital_timur_barat": -11.59,
-    "gap_respons_timur_barat": 8.8,
+    "vif_max_struktural": 6.77,
     "satusehat_selisih_menit": 0.218,
-    "satusehat_p_value": 0.953
+    "satusehat_p_value": 0.953,
+    "region_tertinggi": "Jawa",
+    "skor_region_tertinggi": 76.35,
+    "region_terendah": "Maluku & Papua",
+    "skor_region_terendah": 44.67,
+    "gap_skor_jawa_vs_maluku_papua": 31.68,
+    "gap_respons_jawa_vs_maluku_papua": 16.77
   },
   "pilar2": {
     "efek_gap_digital_respons_per10poin": -3.3,

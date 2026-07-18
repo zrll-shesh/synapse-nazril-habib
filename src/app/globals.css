@@ -15,6 +15,8 @@ html {
 body {
   background-color: #f3f1eb;
   color: #16211d;
+  background-image: radial-gradient(circle at 1px 1px, rgba(22, 33, 29, 0.05) 1px, transparent 0);
+  background-size: 22px 22px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -65,6 +67,89 @@ body {
   width: 6px;
   height: 7px;
   background: #0f6b5c;
+  box-shadow: 0 0 0 3px rgba(15, 107, 92, 0.15);
+}
+
+/* card elevation system: flat paper look at rest, subtle lift on hover */
+.card-surface {
+  background-color: #fbfaf6;
+  border: 1px solid #dad5c8;
+  border-radius: 0.6rem;
+  box-shadow: 0 1px 2px rgba(22, 33, 29, 0.04);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+.card-surface-interactive:hover {
+  transform: translateY(-2px);
+  border-color: #0f6b5c;
+  box-shadow: 0 10px 24px -12px rgba(15, 107, 92, 0.35), 0 2px 6px rgba(22, 33, 29, 0.06);
+}
+
+/* subtle grain/grid texture reserved for hero + emphasis panels */
+.texture-panel {
+  background-color: #fbfaf6;
+  background-image:
+    linear-gradient(to right, #dad5c8 1px, transparent 1px),
+    linear-gradient(to bottom, #dad5c8 1px, transparent 1px);
+  background-size: 26px 26px;
+  background-position: -1px -1px;
+}
+
+/* fade + rise entrance for main content on route change */
+.page-enter {
+  animation: page-rise 480ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@keyframes page-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* staggered children fade, used for stat card rows */
+.stagger-children > * {
+  animation: page-rise 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-children > *:nth-child(2) { animation-delay: 60ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 120ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 180ms; }
+.stagger-children > *:nth-child(5) { animation-delay: 240ms; }
+.stagger-children > *:nth-child(6) { animation-delay: 300ms; }
+
+/* numbered badge used in SectionHeader, ties to the "pillar tab" motif */
+.pillar-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: #0f6b5c;
+  color: #fbfaf6;
+  flex-shrink: 0;
+}
+
+/* custom scrollbar, quiet + consistent with paper palette */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c9c3b4 transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #c9c3b4;
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 table.data-table {
@@ -73,19 +158,52 @@ table.data-table {
   border-collapse: collapse;
   width: 100%;
 }
-table.data-table th {
+table.data-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   text-align: left;
   font-weight: 500;
   color: #3d473f;
+  background: #fbfaf6;
   border-bottom: 1px solid #dad5c8;
-  padding: 8px 12px;
+  padding: 9px 12px;
   white-space: nowrap;
 }
 table.data-table td {
-  padding: 7px 12px;
+  padding: 8px 12px;
   border-bottom: 1px solid #eae7dd;
   color: #16211d;
 }
-table.data-table tr:hover td {
-  background-color: #eae7dd;
+table.data-table tbody tr {
+  transition: background-color 120ms ease;
 }
+table.data-table tbody tr:nth-child(even) td {
+  background-color: rgba(234, 231, 221, 0.4);
+}
+table.data-table tbody tr:hover td {
+  background-color: #e4efec;
+}
+
+/* pulse dot used for "live/computed" indicators */
+.pulse-dot {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: #0f6b5c;
+  display: inline-block;
+}
+.pulse-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: #0f6b5c;
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
+
