@@ -17,7 +17,7 @@ export default function Pilar5Page() {
   return (
     <div>
       <SectionHeader
-        eyebrow="Pilar 05 — Benchmark Model"
+        eyebrow="Pilar 05  Benchmark Model"
         title="MLP vs XGBoost: perbedaan yang tidak signifikan, tapi tetap bermakna"
         description="Benchmark diuji dengan koreksi Nadeau-Bengio yang valid untuk hasil cross-validation, bukan uji Wilcoxon naif yang lazim disalahgunakan."
       />
@@ -80,7 +80,7 @@ export default function Pilar5Page() {
         <InsightCallout tone="amber">
           R² cross-validation kedua model negatif untuk kedua target (XGBoost: -0.14 dan -0.32; MLP:
           -0.18 dan -0.38). Ini menunjukkan waktu respons rujukan dan LOS memang sulit diprediksi
-          dari fitur struktural dan digital yang tersedia — konsisten dengan temuan Pilar 2 bahwa R²
+          dari fitur struktural dan digital yang tersedia  konsisten dengan temuan Pilar 2 bahwa R²
           in-sample OLS juga rendah (0.20 dan 0.10). Kejujuran ini penting: model bukan untuk
           prediksi presisi tinggi, melainkan untuk memahami arah dan kekuatan asosiasi antar variabel.
         </InsightCallout>
@@ -99,7 +99,7 @@ export default function Pilar5Page() {
         <InsightCallout tone="amber">
           Meskipun perbedaan akurasi tidak signifikan, XGBoost tetap dipilih sebagai model utama
           bukan karena akurasi lebih tinggi, melainkan karena kemampuan SHAP menjelaskan kontribusi
-          tiap fitur secara individual — sesuatu yang tidak dimiliki MLP dalam konteks proyek ini.
+          tiap fitur secara individual  sesuatu yang tidak dimiliki MLP dalam konteks proyek ini.
           Pemilihan model tidak selalu soal mengejar akurasi tertinggi, terutama ketika perbedaannya
           tidak signifikan; interpretabilitas untuk kebutuhan pengambilan keputusan bisnis bisa jadi
           pertimbangan yang lebih menentukan.

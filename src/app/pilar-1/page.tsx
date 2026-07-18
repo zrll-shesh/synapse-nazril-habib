@@ -18,7 +18,7 @@ export default function Pilar1Page() {
   return (
     <div>
       <SectionHeader
-        eyebrow="Pilar 01 — Audit Kematangan Digital"
+        eyebrow="Pilar 01  Audit Kematangan Digital"
         title="Apa yang sebenarnya membentuk skor kematangan digital?"
         description="Dua model dijalankan terpisah untuk menghindari klaim sebab-akibat yang keliru: model struktural menjelaskan skor digital dari kelas, kepemilikan, dan lokasi; model investasi menjelaskan skor digital dari sumber daya IT."
       />
@@ -36,10 +36,10 @@ export default function Pilar1Page() {
       </div>
 
       <section className="mb-12">
-        <p className="eyebrow mb-3">6.1 Model Struktural — Kelas, Kepemilikan, Region</p>
+        <p className="eyebrow mb-3">6.1 Model Struktural  Kelas, Kepemilikan, Region</p>
         <p className="font-body text-ink-soft mb-4 leading-relaxed max-w-2xl">
           Model ini menjawab: seberapa besar skor digital sebuah rumah sakit ditentukan oleh
-          hal-hal yang tidak bisa diubah lewat kebijakan jangka pendek — kelasnya, siapa
+          hal-hal yang tidak bisa diubah lewat kebijakan jangka pendek  kelasnya, siapa
           pemiliknya, dan di wilayah mana ia berada.
         </p>
         <HorizontalBarChart
@@ -56,7 +56,7 @@ export default function Pilar1Page() {
       </section>
 
       <section className="mb-12">
-        <p className="eyebrow mb-3">6.2 Model Investasi — Konteks Pendukung</p>
+        <p className="eyebrow mb-3">6.2 Model Investasi  Konteks Pendukung</p>
         <p className="font-body text-ink-soft mb-4 leading-relaxed max-w-2xl">
           Model ini ditempatkan sebagai konteks, bukan klaim sebab-akibat independen, karena skor
           digital kemungkinan besar adalah turunan langsung dari keempat variabel investasi ini.
@@ -67,7 +67,7 @@ export default function Pilar1Page() {
         />
         <InsightCallout tone="teal">
           Keempat variabel investasi IT menjelaskan {headline.pilar1.r2_investasi * 100}% variasi
-          skor digital — jauh lebih tinggi dari model struktural. Ini bukan temuan sebab-akibat baru,
+          skor digital  jauh lebih tinggi dari model struktural. Ini bukan temuan sebab-akibat baru,
           melainkan indikasi bahwa skor tersebut dihitung dari variabel-variabel ini sendiri.
         </InsightCallout>
       </section>
@@ -89,7 +89,7 @@ export default function Pilar1Page() {
         <InsightCallout tone="coral">
           Region Jawa memiliki skor digital tertinggi ({headline.pilar1.skor_region_tertinggi}) dan
           waktu respons tercepat, sedangkan Maluku & Papua berada di posisi terendah (
-          {headline.pilar1.skor_region_terendah} poin skor digital, {55.78} menit waktu respons) —
+          {headline.pilar1.skor_region_terendah} poin skor digital, {55.78} menit waktu respons) 
           selisih {headline.pilar1.gap_skor_jawa_vs_maluku_papua} poin skor digital dan{" "}
           {headline.pilar1.gap_respons_jawa_vs_maluku_papua} menit waktu respons antara kedua
           ujung spektrum ini.
@@ -101,7 +101,7 @@ export default function Pilar1Page() {
         <p className="font-body text-ink-soft leading-relaxed max-w-2xl mb-4">
           Selisih waktu respons rujukan antara RS yang terhubung SatuSehat dan yang belum hanya{" "}
           {headline.pilar1.satusehat_selisih_menit} menit, dengan p-value {headline.pilar1.satusehat_p_value}{" "}
-          — jauh dari signifikan.
+           jauh dari signifikan.
         </p>
         <InsightCallout tone="amber">
           Status koneksi SatuSehat sebaiknya dibaca sebagai penanda kepatuhan administratif, bukan
@@ -117,14 +117,14 @@ export default function Pilar1Page() {
             rows={vifStructural
               .filter((v: any) => v.feature !== "const")
               .map((v: any) => [v.feature, v.VIF.toFixed(2)])}
-            caption={`VIF maksimum ${maxVif.toFixed(2)} — di bawah ambang 10`}
+            caption={`VIF maksimum ${maxVif.toFixed(2)}  di bawah ambang 10`}
           />
           <DataTable
             columns={["Fitur (Model Investasi)", "VIF"]}
             rows={vifInvestment
               .filter((v: any) => v.feature !== "const")
               .map((v: any) => [v.feature, v.VIF.toFixed(2)])}
-            caption="Seluruh VIF di bawah 3 — tidak ada multikolinearitas"
+            caption="Seluruh VIF di bawah 3  tidak ada multikolinearitas"
           />
         </div>
       </section>

@@ -26,7 +26,7 @@ export default function Pilar3Page() {
   return (
     <div>
       <SectionHeader
-        eyebrow="Pilar 03 — Segmentasi & Deteksi Bottleneck"
+        eyebrow="Pilar 03  Segmentasi & Deteksi Bottleneck"
         title="Klaster Digital Frontier tidak pernah mengalami inefisiensi ganda"
         description="Pencarian kombinatorial menyeluruh terhadap ribuan kombinasi fitur, scaler, reduksi dimensi, dan algoritma menghasilkan segmentasi dengan pemisahan statistik terkuat yang bisa dicapai pada data ini."
       />
@@ -95,7 +95,7 @@ export default function Pilar3Page() {
         </div>
         <InsightCallout tone="teal">
           Klaster Digital Frontier (beban kerja SDM efisien + adopsi telemedicine tinggi) memiliki
-          tingkat inefisiensi ganda 0% — tidak satu pun dari 26 rumah sakit di klaster ini pernah
+          tingkat inefisiensi ganda 0%  tidak satu pun dari 26 rumah sakit di klaster ini pernah
           ter-flag, dibanding 10.4% pada klaster Mainstream. Flag ini dihitung independen dari proses
           clustering, sehingga korelasi ini menjadi validasi silang yang kuat.
         </InsightCallout>
@@ -130,7 +130,7 @@ export default function Pilar3Page() {
         </div>
         <p className="font-body text-sm text-ink-soft mt-3 max-w-2xl">
           Klaster Digital Frontier didominasi rumah sakit Jawa dan Swasta/Pemerintah Daerah, namun
-          tetap ada representasi dari hampir semua kepemilikan dan region — menandakan posisi
+          tetap ada representasi dari hampir semua kepemilikan dan region  menandakan posisi
           Digital Frontier bisa dicapai lintas struktur, bukan eksklusif milik satu jenis rumah sakit.
         </p>
       </section>

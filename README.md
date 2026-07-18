@@ -1,4 +1,4 @@
-# DigiCare Intelligence — Web Dashboard
+# DigiCare Intelligence  Web Dashboard
 
 Dashboard analitik dan asisten RAG untuk studi kasus Smart Hospital Nusantara (Kompetisi Data
 Analyst 2026), merangkum 5 pilar analisis atas 276 rumah sakit di 35 provinsi Indonesia.
@@ -45,7 +45,7 @@ npm run dev
 Buka http://localhost:3000. Dashboard (Ringkasan, Pilar 1-5) akan langsung berjalan karena semua
 datanya sudah berupa file JSON statis di `src/data/`.
 
-Untuk halaman **Chat** (`/chat`), endpoint `/api/chat` adalah Python function — `next dev` TIDAK
+Untuk halaman **Chat** (`/chat`), endpoint `/api/chat` adalah Python function  `next dev` TIDAK
 menjalankan fungsi Python secara otomatis. Untuk mencobanya secara lokal:
 
 ```bash
@@ -59,7 +59,7 @@ production Vercel.
 ## 3. WAJIB: Build Vector Store Sebelum Deploy Pertama Kali
 
 Fungsi `/api/chat.py` di Vercel membaca index Chroma yang sudah jadi dari folder `chroma_store/`
-— ia **tidak** menghitung embedding saat runtime (supaya function tetap ringan dan cepat). Karena
+ ia **tidak** menghitung embedding saat runtime (supaya function tetap ringan dan cepat). Karena
 itu, langkah ini wajib dijalankan secara lokal sebelum deploy pertama, dan setiap kali isi
 `rag_corpus/master_corpus.json` berubah:
 
@@ -73,7 +73,7 @@ Script ini akan:
 2. Meng-embed seluruh 40 dokumen di `rag_corpus/master_corpus.json`
 3. Menyimpan index ke folder `chroma_store/`
 
-Setelah selesai, **commit folder `chroma_store/` ke git** — folder ini yang akan ikut ter-deploy
+Setelah selesai, **commit folder `chroma_store/` ke git**  folder ini yang akan ikut ter-deploy
 ke Vercel dan dibaca langsung (read-only) oleh `api/chat.py`.
 
 > Catatan: model embedding hanya jalan di mesin lokal Anda saat build. Di runtime Vercel,
@@ -111,7 +111,7 @@ Jika hasil analisis Pilar 1-5 berubah:
 
 Chroma dalam mode embedded (Python, `PersistentClient`) tidak bisa dijadikan server yang selalu
 menyala di lingkungan serverless seperti Vercel. Solusinya: index Chroma dibangun sekali secara
-lokal lalu di-bundle bersama deployment sebagai file statis read-only — setiap request hanya
+lokal lalu di-bundle bersama deployment sebagai file statis read-only  setiap request hanya
 membaca index tersebut, tidak menulis. Model embedding `all-MiniLM-L6-v2` juga sengaja dipanggil
 lewat Hugging Face Inference API (bukan dimuat langsung di function), karena PyTorch + model
 sentence-transformers terlalu besar untuk ukuran bundel function Vercel yang wajar.

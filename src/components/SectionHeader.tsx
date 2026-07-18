@@ -7,7 +7,7 @@ type SectionHeaderProps = {
 export default function SectionHeader({ eyebrow, title, description }: SectionHeaderProps) {
   const match = eyebrow.match(/(\d+)/);
   const badge = match ? match[1].padStart(2, "0") : null;
-  const label = badge ? eyebrow.replace(/Pilar\s*0*\d+\s*—?\s*/i, "").trim() : eyebrow;
+  const label = badge ? eyebrow.replace(/Pilar\s*0*\d+\s*?\s*/i, "").trim() : eyebrow;
 
   return (
     <div className="mb-10">

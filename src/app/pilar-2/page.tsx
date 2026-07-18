@@ -50,7 +50,7 @@ export default function Pilar2Page() {
   return (
     <div>
       <SectionHeader
-        eyebrow="Pilar 02 — Dampak Operasional"
+        eyebrow="Pilar 02  Dampak Operasional"
         title="Digitalisasi mempercepat respons, tapi tidak memperpendek rawat inap"
         description="Dua target diuji terpisah dengan OLS dan XGBoost + SHAP: waktu respons rujukan (Target A) dan lama rawat inap / LOS (Target B)."
       />
@@ -62,7 +62,7 @@ export default function Pilar2Page() {
       </div>
 
       <section className="mb-12">
-        <p className="eyebrow mb-3">6.1 Target A — Waktu Respons Rujukan (OLS)</p>
+        <p className="eyebrow mb-3">6.1 Target A  Waktu Respons Rujukan (OLS)</p>
         <p className="font-body text-ink-soft mb-4 leading-relaxed max-w-2xl">
           Koefisien regresi terhadap waktu respons rujukan (menit). Nilai negatif berarti fitur
           tersebut berasosiasi dengan respons yang lebih cepat.
@@ -76,7 +76,7 @@ export default function Pilar2Page() {
       </section>
 
       <section className="mb-12">
-        <p className="eyebrow mb-3">6.2 Kontribusi Fitur (SHAP) — Target A</p>
+        <p className="eyebrow mb-3">6.2 Kontribusi Fitur (SHAP)  Target A</p>
         <HorizontalBarChart
           data={shapChartA}
           valueLabel="Mean |SHAP|"
@@ -90,24 +90,24 @@ export default function Pilar2Page() {
       </section>
 
       <section className="mb-12">
-        <p className="eyebrow mb-3">6.3 Target B — Lama Rawat Inap (LOS): Klaim Tidak Terbukti</p>
+        <p className="eyebrow mb-3">6.3 Target B  Lama Rawat Inap (LOS): Klaim Tidak Terbukti</p>
         <p className="font-body text-ink-soft mb-4 leading-relaxed max-w-2xl">
           Koefisien regresi terhadap lama rawat inap (hari). Ditampilkan penuh, termasuk yang tidak
-          signifikan, untuk transparansi metodologis — bukan hanya variabel yang &ldquo;lolos&rdquo;.
+          signifikan, untuk transparansi metodologis  bukan hanya variabel yang &ldquo;lolos&rdquo;.
         </p>
         <HorizontalBarChart data={coefChartB} valueLabel="Koefisien (hari)" height={420} />
         <InsightCallout tone="coral">
           Berbeda dengan waktu respons, LOS tidak berasosiasi secara statistik dengan variabel
           digital apa pun setelah multikolinearitas dikoreksi (p gap digital = 0.456). Digitalisasi
           berdampak pada <strong>kecepatan proses layanan</strong>, bukan pada{" "}
-          <strong>durasi klinis perawatan</strong> — LOS lebih ditentukan oleh kelas RS, BOR, dan
+          <strong>durasi klinis perawatan</strong>  LOS lebih ditentukan oleh kelas RS, BOR, dan
           tingkat keparahan penyakit. Ini bukan kelemahan, melainkan kejujuran metodologis yang
           memperkuat kredibilitas temuan Target A.
         </InsightCallout>
       </section>
 
       <section className="mb-12">
-        <p className="eyebrow mb-3">6.4 Kontribusi Fitur (SHAP) — Target B</p>
+        <p className="eyebrow mb-3">6.4 Kontribusi Fitur (SHAP)  Target B</p>
         <HorizontalBarChart
           data={shapChartB}
           valueLabel="Mean |SHAP|"
@@ -116,7 +116,7 @@ export default function Pilar2Page() {
         />
         <p className="font-body text-sm text-ink-soft mt-3 max-w-2xl">
           Menariknya, anggaran IT dan rasio adopsi telemedicine tetap muncul sebagai kontributor
-          teratas secara non-linear pada XGBoost, meski tidak signifikan pada OLS linear — sinyal
+          teratas secara non-linear pada XGBoost, meski tidak signifikan pada OLS linear  sinyal
           hubungan yang lemah dan tidak konsisten, memperkuat kesimpulan bahwa LOS tidak benar-benar
           dijelaskan oleh faktor digital.
         </p>
@@ -139,8 +139,8 @@ export default function Pilar2Page() {
         <InsightCallout tone="amber">
           Berbeda dengan Pilar 1 dan 3, model Pilar 2 memiliki multikolinearitas parah pada beberapa
           variabel kontrol struktural (jumlah_jenis_layanan VIF=45.4, jumlah_tempat_tidur VIF=38.2,
-          status_implementasi_rme VIF=27.6). Untungnya, variabel utama yang jadi fokus klaim utama —
-          digital_gap_score — memiliki VIF rendah (4.81), sehingga koefisiennya tetap layak
+          status_implementasi_rme VIF=27.6). Untungnya, variabel utama yang jadi fokus klaim utama 
+          digital_gap_score  memiliki VIF rendah (4.81), sehingga koefisiennya tetap layak
           diinterpretasikan. Namun koefisien variabel struktural lain pada chart di atas (kapasitas
           tempat tidur, jumlah layanan, dsb.) sebaiknya dibaca dengan hati-hati dan tidak
           diinterpretasikan satu per satu secara individual.

@@ -104,7 +104,7 @@ export default function HospitalRosterTable({ data }: { data: Hospital[] }) {
                     {h.flag_double_inefficiency === 1 ? (
                       <span className="text-coral font-medium">Ya</span>
                     ) : (
-                      <span className="text-ink-soft/50">—</span>
+                      <span className="text-ink-soft/50"></span>
                     )}
                   </td>
                 </tr>

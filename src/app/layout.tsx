@@ -24,7 +24,7 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DigiCare Intelligence — Smart Hospital Efficiency",
+  title: "DigiCare Intelligence  Smart Hospital Efficiency",
   description:
     "Audit kematangan digital, dampak operasional, dan segmentasi bottleneck 276 rumah sakit Indonesia.",
 };

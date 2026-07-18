@@ -95,7 +95,7 @@ export default function HomePage() {
           label="ROC-AUC Model Risiko"
           value={String(headline.pilar4.roc_auc)}
           tone="warning"
-          note="Recall 16% — lapisan pertama, bukan final"
+          note="Recall 16%  lapisan pertama, bukan final"
         />
       </section>
 
