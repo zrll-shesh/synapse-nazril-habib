@@ -1,34 +1,36 @@
 """
 Vercel Python Serverless Function: /api/chat
 
-Alur RAG:
+Alur RAG (full Gemini, tanpa Hugging Face):
 1. Terima pertanyaan pengguna dari frontend Next.js.
-2. Embed pertanyaan memakai model sentence-transformers/all-MiniLM-L6-v2
-   lewat Hugging Face Inference API (bukan load model lokal, supaya fungsi
-   serverless tetap ringan dan cepat cold-start-nya).
-3. Query koleksi ChromaDB (chroma_store/) yang sudah dibangun sebelumnya oleh
-   scripts/build_vector_store.py, untuk mengambil dokumen insight paling relevan.
+2. Embed pertanyaan memakai Gemini Embedding API (models/gemini-embedding-001).
+3. Query koleksi ChromaDB (chroma_store/) untuk mengambil dokumen insight
+   paling relevan. PENTING: chroma_store harus dibangun memakai
+   scripts/build_vector_store.py versi Gemini (model + outputDimensionality
+   HARUS SAMA PERSIS dengan yang dipakai di sini), supaya dimensi vektor
+   query dan index cocok.
 4. Kirim konteks + pertanyaan ke Gemini 2.5 Flash Lite untuk menghasilkan
-   jawaban akhir dalam Bahasa Indonesia, membumi pada dokumen yang diambil.
+   jawaban akhir dalam Bahasa Indonesia.
 
-Environment variables yang dibutuhkan (lihat .env.example):
-  HUGGINGFACE_API_TOKEN
-  GEMINI_API_KEY
+Environment variables yang dibutuhkan:
+  GEMINI_API_KEY   (dipakai untuk embedding DAN generation)
 """
 
 import json
 import os
 import traceback
-
-import chromadb
-import requests
+from http.server import BaseHTTPRequestHandler
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STORE_PATH = os.path.join(ROOT, "chroma_store")
+SOURCE_STORE_PATH = os.path.join(ROOT, "chroma_store")
+TMP_STORE_PATH = "/tmp/chroma_store"
 COLLECTION_NAME = "digicare_rag"
 
-HF_API_URL = "https://api-inference.huggingface.co/pipeline/feature-extraction/sentence-transformers/all-MiniLM-L6-v2"
-GEMINI_API_URL = (
+EMBED_MODEL = "models/gemini-embedding-001"
+EMBED_URL = f"https://generativelanguage.googleapis.com/v1beta/{EMBED_MODEL}:embedContent"
+OUTPUT_DIM = 768  # HARUS SAMA dengan scripts/build_vector_store.py
+
+GEMINI_GENERATE_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
     "gemini-2.5-flash-lite:generateContent"
 )
@@ -47,31 +49,59 @@ Aturan:
 """
 
 
-def embed_query(text: str) -> list:
-    token = os.environ.get("HUGGINGFACE_API_TOKEN")
-    if not token:
-        raise RuntimeError("HUGGINGFACE_API_TOKEN belum diset di environment variables.")
+def get_chromadb_module():
+    try:
+        __import__("pysqlite3")
+        import sys as _sys
+        _sys.modules["sqlite3"] = _sys.modules.pop("pysqlite3")
+    except ImportError:
+        pass
+
+    import chromadb
+    return chromadb
+
+
+def ensure_store_in_tmp() -> str:
+    import shutil
+
+    if not os.path.isdir(TMP_STORE_PATH):
+        if not os.path.isdir(SOURCE_STORE_PATH):
+            raise RuntimeError(
+                f"Folder chroma_store TIDAK DITEMUKAN di deployment ({SOURCE_STORE_PATH}). "
+                "Cek 'includeFiles' di vercel.json dan pastikan chroma_store ter-commit ke git."
+            )
+        shutil.copytree(SOURCE_STORE_PATH, TMP_STORE_PATH)
+    return TMP_STORE_PATH
+
+
+def embed_query(text: str, api_key: str) -> list:
+    import requests
 
     response = requests.post(
-        HF_API_URL,
-        headers={"Authorization": f"Bearer {token}"},
-        json={"inputs": text, "options": {"wait_for_model": True}},
-        timeout=30,
+        f"{EMBED_URL}?key={api_key}",
+        headers={"Content-Type": "application/json"},
+        json={
+            "model": EMBED_MODEL,
+            "content": {"parts": [{"text": text}]},
+            "taskType": "RETRIEVAL_QUERY",
+            "outputDimensionality": OUTPUT_DIM,
+        },
+        timeout=20,
     )
-    response.raise_for_status()
-    result = response.json()
-
-    # HF feature-extraction can return [seq_len, hidden] or already pooled [hidden].
-    # Mean-pool over tokens if a 2D array is returned.
-    if isinstance(result[0], list):
-        vec_len = len(result[0])
-        pooled = [sum(token_vec[i] for token_vec in result) / len(result) for i in range(vec_len)]
-        return pooled
-    return result
+    if response.status_code != 200:
+        raise RuntimeError(f"Gemini Embedding API error {response.status_code}: {response.text[:300]}")
+    data = response.json()
+    try:
+        return data["embedding"]["values"]
+    except KeyError:
+        raise RuntimeError(f"Format respons embedding tidak terduga: {json.dumps(data)[:300]}")
 
 
 def query_chroma(query_embedding: list, top_k: int = 5):
-    client = chromadb.PersistentClient(path=STORE_PATH)
+    chromadb = get_chromadb_module()
+    store_path = ensure_store_in_tmp()
+
+    client = chromadb.PersistentClient(path=store_path)
     collection = client.get_collection(COLLECTION_NAME)
     results = collection.query(query_embeddings=[query_embedding], n_results=top_k)
 
@@ -80,10 +110,8 @@ def query_chroma(query_embedding: list, top_k: int = 5):
     return list(zip(docs, metadatas))
 
 
-def call_gemini(question: str, context_blocks: list) -> str:
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        raise RuntimeError("GEMINI_API_KEY belum diset di environment variables.")
+def call_gemini(question: str, context_blocks: list, api_key: str) -> str:
+    import requests
 
     context_text = "\n\n".join(
         f"[Sumber: {meta['pilar']} - {meta['title']}]\n{doc}" for doc, meta in context_blocks
@@ -95,9 +123,7 @@ def call_gemini(question: str, context_blocks: list) -> str:
             {
                 "role": "user",
                 "parts": [
-                    {
-                        "text": f"KONTEKS DOKUMEN:\n{context_text}\n\nPERTANYAAN PENGGUNA:\n{question}"
-                    }
+                    {"text": f"KONTEKS DOKUMEN:\n{context_text}\n\nPERTANYAAN PENGGUNA:\n{question}"}
                 ],
             }
         ],
@@ -105,33 +131,30 @@ def call_gemini(question: str, context_blocks: list) -> str:
     }
 
     response = requests.post(
-        f"{GEMINI_API_URL}?key={api_key}",
+        f"{GEMINI_GENERATE_URL}?key={api_key}",
         headers={"Content-Type": "application/json"},
         json=payload,
-        timeout=30,
+        timeout=25,
     )
-    response.raise_for_status()
+    if response.status_code != 200:
+        raise RuntimeError(f"Gemini Generate API error {response.status_code}: {response.text[:300]}")
     data = response.json()
-    return data["candidates"][0]["content"]["parts"][0]["text"]
-
-
-def handler(request):
-    """Kept for reference / local testing outside Vercel; the actual Vercel
-    entrypoint used in production is the `handler` class below."""
-    raise NotImplementedError("Gunakan class handler (BaseHTTPRequestHandler) di bawah untuk Vercel.")
-
-
-# --- Vercel Python runtime entrypoint ---
-# Vercel's Python runtime (@vercel/python) looks for a class named `handler`
-# that extends BaseHTTPRequestHandler in this file.
-from http.server import BaseHTTPRequestHandler
+    try:
+        return data["candidates"][0]["content"]["parts"][0]["text"]
+    except (KeyError, IndexError):
+        raise RuntimeError(f"Format respons Gemini tidak terduga: {json.dumps(data)[:300]}")
 
 
 class handler(BaseHTTPRequestHandler):
     def do_POST(self):
         try:
+            api_key = os.environ.get("GEMINI_API_KEY")
+            if not api_key:
+                self._send(500, {"error": "GEMINI_API_KEY belum diset di Environment Variables Vercel."})
+                return
+
             content_length = int(self.headers.get("Content-Length", 0))
-            raw_body = self.rfile.read(content_length)
+            raw_body = self.rfile.read(content_length) if content_length else b"{}"
             body = json.loads(raw_body or b"{}")
             question = (body.get("question") or "").strip()
 
@@ -139,9 +162,9 @@ class handler(BaseHTTPRequestHandler):
                 self._send(400, {"error": "Pertanyaan tidak boleh kosong."})
                 return
 
-            query_embedding = embed_query(question)
+            query_embedding = embed_query(question, api_key)
             retrieved = query_chroma(query_embedding, top_k=5)
-            answer = call_gemini(question, retrieved)
+            answer = call_gemini(question, retrieved, api_key)
 
             sources = [{"title": meta["title"], "pilar": meta["pilar"]} for _, meta in retrieved]
             seen = set()
@@ -155,7 +178,10 @@ class handler(BaseHTTPRequestHandler):
             self._send(200, {"answer": answer, "sources": unique_sources})
         except Exception as e:
             traceback.print_exc()
-            self._send(500, {"error": str(e)})
+            self._send(500, {
+                "error": str(e),
+                "error_type": type(e).__name__,
+            })
 
     def do_OPTIONS(self):
         self.send_response(204)
