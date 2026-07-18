@@ -1,10 +1,10 @@
-# DigiCare Intelligence — Web Dashboard
+# DigiCare Intelligence  Web Dashboard
 
 Dashboard analitik dan asisten RAG untuk studi kasus Smart Hospital Nusantara (Kompetisi Data
 Analyst 2026), merangkum 5 pilar analisis atas 276 rumah sakit di 35 provinsi Indonesia.
 
 Stack: **Next.js 14 (App Router) + TypeScript + Tailwind CSS** untuk dashboard, dan **Gemini API**
-(satu-satunya dependency eksternal) untuk asisten RAG — tidak ada Python, tidak ada ChromaDB,
+(satu-satunya dependency eksternal) untuk asisten RAG  tidak ada Python, tidak ada ChromaDB,
 tidak ada Hugging Face. Semua berjalan sebagai satu aplikasi Next.js biasa.
 
 ## 1. Struktur Proyek
@@ -38,7 +38,7 @@ npm install
 cp .env.example .env.local
 ```
 
-Buka `.env.local`, isi `GEMINI_API_KEY` — ambil dari https://aistudio.google.com/app/apikey
+Buka `.env.local`, isi `GEMINI_API_KEY`  ambil dari https://aistudio.google.com/app/apikey
 (gratis, tinggal login pakai akun Google). Ini **satu-satunya** API key yang dibutuhkan seluruh
 proyek ini.
 
@@ -51,7 +51,7 @@ npm run dev
 ```
 
 Buka http://localhost:3000. Semua halaman termasuk **Chat** langsung jalan penuh di `npm run dev`
-biasa — tidak perlu tool tambahan seperti `vercel dev`, karena semuanya Next.js standar.
+biasa  tidak perlu tool tambahan seperti `vercel dev`, karena semuanya Next.js standar.
 
 ## 3. Kenapa Harus `npm run build:embeddings` Dulu?
 
@@ -82,7 +82,7 @@ Vercel otomatis mendeteksi ini sebagai project Next.js standar dan men-deploy `a
 sebagai Node.js Function biasa.
 
 **Penting:** pastikan `rag_corpus/embeddings.json` hasil dari langkah 2 sudah ter-commit ke git
-(bukan cuma ada di laptop kamu) — cek dengan `git status`, harus muncul sebagai file yang berubah/
+(bukan cuma ada di laptop kamu)  cek dengan `git status`, harus muncul sebagai file yang berubah/
 baru sebelum kamu commit. Tanpa file ini ter-push, fitur chat di production akan mengembalikan
 hasil kosong.
 
