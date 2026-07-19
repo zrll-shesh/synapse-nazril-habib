@@ -69,25 +69,45 @@ async function generateAnswer(apiKey: string, question: string, contextDocs: Emb
     .join("\n\n");
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GENERATION_MODEL}:generateContent?key=${apiKey}`;
-  const res = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
-      contents: [
-        {
-          role: "user",
-          parts: [{ text: `KONTEKS DOKUMEN:\n${contextText}\n\nPERTANYAAN PENGGUNA:\n${question}` }],
-        },
-      ],
-      generationConfig: { temperature: 0.3, maxOutputTokens: 700 },
-    }),
-  });
-  if (!res.ok) {
-    throw new Error(`Gagal generate jawaban (${res.status}): ${await res.text()}`);
+  const payload = {
+    system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
+    contents: [
+      {
+        role: "user",
+        parts: [{ text: `KONTEKS DOKUMEN:\n${contextText}\n\nPERTANYAAN PENGGUNA:\n${question}` }],
+      },
+    ],
+    generationConfig: { temperature: 0.3, maxOutputTokens: 700 },
+  };
+
+  const MAX_RETRIES = 3;
+  let lastErrorText = "";
+
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    if (res.ok) {
+      const data = await res.json();
+      return data.candidates[0].content.parts[0].text;
+    }
+
+    lastErrorText = await res.text();
+
+    // 503 = server Gemini sedang sibuk/overload sesaat, layak dicoba lagi.
+    // Selain itu (400, 401, 404, dst) tidak ada gunanya diulang, langsung lempar error.
+    if (res.status !== 503 || attempt === MAX_RETRIES) {
+      throw new Error(`Gagal generate jawaban (${res.status}): ${lastErrorText}`);
+    }
+
+    // tunggu sebentar sebelum coba lagi, makin lama tiap percobaan (1s, 2s, 3s)
+    await new Promise((resolve) => setTimeout(resolve, attempt * 1000));
   }
-  const data = await res.json();
-  return data.candidates[0].content.parts[0].text;
+
+  throw new Error(`Gagal generate jawaban setelah ${MAX_RETRIES} percobaan: ${lastErrorText}`);
 }
 
 export async function POST(req: NextRequest) {
