@@ -64,7 +64,7 @@ export default function ChatPage() {
       <SectionHeader
         eyebrow="RAG Assistant"
         title="Tanya DigiCare"
-        description="Dijawab berbasis embedding dan Gemini 2.5 Flash Lite atas dokumen insight Pilar 1-5."
+        description="Arsitektur RAG: pertanyaan di-embed dengan gemini-embedding-001 (768 dimensi), dibandingkan lewat cosine similarity terhadap embedding 40 dokumen insight Pilar 1-5 yang sudah dihitung sebelumnya (offline), top-5 dokumen dengan skor tertinggi disuntikkan sebagai grounding context ke system prompt, lalu gemini-2.5-flash-lite men-generate jawaban dengan temperature 0.3 — retrieval-augmented, bukan hasil hafalan model."
       />
 
       <div ref={scrollRef} className="flex-1 overflow-y-auto space-y-4 pr-1 mb-4">
